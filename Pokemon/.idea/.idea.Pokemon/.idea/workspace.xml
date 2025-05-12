@@ -9,6 +9,17 @@
   <component name="ChangeListManager">
     <list default="true" id="76848a35-e7a8-4068-95a7-3f62e568fd20" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pokemon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pokemon/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.exe.recipe" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.exe.recipe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/Cl.items.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/Cl.items.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/Pokemon.lastbuildstate" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/Pokemon.lastbuildstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/link.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/link.secondary.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/link.secondary.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/link.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/vc143.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +53,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "C++ Project.Pokemon.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Feature__1__Pokemon__Setup",
     "node.js.detected.package.eslint": "true",
@@ -59,6 +71,27 @@
     ]
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Pokemon" type="CppProject" factoryName="C++ Project">
+      <configuration_1>
+        <option name="CONFIGURATION" value="Debug" />
+        <option name="PLATFORM" value="x64" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Pokemon.vcxproj" />
+        <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+        <option name="EXE_PATH" value="$(TargetPath)" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+        <option name="WORKING_DIRECTORY" value="$(ProjectDir)" />
+        <option name="PASS_PARENT_ENVS" value="1" />
+        <option name="USE_EXTERNAL_CONSOLE" value="0" />
+        <option name="TERMINAL_INTERACTION_BEHAVIOR" value="AUTO_DETECT" />
+      </configuration_1>
+      <option name="DEFAULT_PROJECT_PATH" value="" />
+      <option name="AUTO_SELECT_PRIORITY" value="0" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725695804824</updated>
       <workItem from="1725695806886" duration="65000" />
-      <workItem from="1747049086051" duration="1292000" />
+      <workItem from="1747049086051" duration="1764000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
