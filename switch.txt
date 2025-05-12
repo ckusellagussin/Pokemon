@@ -1,0 +1,25 @@
+#include <iostream>
+ using namespace std;
+ int main() {
+int roomSelection;
+ std::cout << "You enter a very spooky castle for some reason and you notice there is a corridor that splits to 3 doors" << std::endl;
+ std::cout << "What door do you open? Select 1, 2 or 3 for each room you want to pick: " << std::endl;
+ std::cin >> roomSelection;
+
+switch (roomSelection)
+{
+    case 1: 
+        std::cout << "A room full of gold coins! You can retire now, you lucky soul!" << std::endl;
+        break;
+    case 2: 
+        std::cout << "A library of ancient books! You gain immense knowledge, but beware… some knowledge comes with a price." << std::endl;
+        break;
+    case 3: 
+        std::cout << "A sleeping dragon! You barely escape with your life. Perhaps next time, choose more wisely... "<< std::endl;
+        break;
+    default:
+        std::cout << "A secret passage to the dungeon! Beware, danger lies ahead in the dark corridors." << std::endl;
+        break;
+}
+ return 0;
+ }
