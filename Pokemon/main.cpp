@@ -7,6 +7,7 @@
 
 int main() {
     
+    
     std::string playerName;
     msg << "What is your name?: " << end;
     std::cin >> playerName;
@@ -14,24 +15,30 @@ int main() {
     msg << "Congratulations! You are now in the game " << playerName << "!" << end;
 
     std::string tempChoice;
-    std::string tempchoice2;
+    std::string tempChoice2;
     std::string playerPokemon;
 
    msg << "My name is Professor Oak, I am a Pokemon expert and leader at the Pokemon research centre here" << end;
-   msg << "I see you have come of age and are ready to have the selection of picking your first Pokemon! Here is your selection!" << end;
+   msg << "I see you have come of age and are ready to have the selection of picking your first Pokemon!" << end;
    msg << "You are presented with three Pokemon: They are Charmander (A fiery lizard with a flame on his tail), "
           "Squirtle (A small blue turtle looking pokemon with a curly tail) "
           "and Bulbasaur (A small green reptile with a cabbage on it's back that shoots out vines)." <<end;
-    msg << "Which pokemon do you choose?: " << end;
+    
+        msg << "Which pokemon do you choose?: " << end;
+        choice >> tempChoice;
 
-    choice >> tempChoice;
+    if(tempChoice != "Charmander" || tempChoice != "Bulbasaur" || tempChoice != "Squirtle")
+    {
 
-    if(tempChoice == "Charmander")
+        msg << "Your selection is not one of the presented, please start again!" << end;
+               
+    }
+        
+        if(tempChoice == "Charmander")
         {
-
             msg << "Are you sure you want to pick Charmander?" << end;
-            choice >> tempchoice2;
-            if(tempchoice2 == "Y" || tempchoice2 == "Yes" || tempchoice2 == "y" || tempchoice2 == "yes")
+            choice >> tempChoice2;
+            if(tempChoice2 == "Y" || tempChoice2 == "Yes" || tempChoice2 == "y" || tempChoice2 == "yes")
             {
 
                 msg << "You have chosen Charmander!" << end;
@@ -40,38 +47,36 @@ int main() {
             }
 
         }
-    else if (tempChoice == "Squirtle")
-    {   
+        else if (tempChoice == "Squirtle")
+        {   
 
-        msg << "Are you sure you want to pick Squirtle?" << end;
-        choice >> tempchoice2;
-        if(tempchoice2 == "Y" || tempchoice2 == "Yes" || tempchoice2 == "y" || tempchoice2 == "yes")
+            msg << "Are you sure you want to pick Squirtle?" << end;
+            choice >> tempChoice2;
+            if(tempChoice2 == "Y" || tempChoice2 == "Yes" || tempChoice2 == "y" || tempChoice2 == "yes")
+            {
+
+                msg << "You have chosen Squirtle!" << end;
+                tempChoice = playerPokemon;
+
+            }
+        
+        }
+        else if(tempChoice == "Bulbasaur")
         {
 
-            msg << "You have chosen Squirtle!" << end;
-            tempChoice = playerPokemon;
+            msg << "Are you sure you want to pick Bulbasaur?" << end;
+            choice >> tempChoice2;
+            if(tempChoice2 == "Y" || tempChoice2 == "Yes" || tempChoice2 == "y" || tempChoice2 == "yes")
+            {
+
+                msg << "You have chosen Bulbasaur!" << end;
+                tempChoice = playerPokemon;
                 
-        }
-
+            }
+            
         
-    }
-    else if(tempChoice == "Bulbasaur")
-    {
-
-        msg << "Are you sure you want to pick Bulbasaur?" << end;
-        choice >> tempchoice2;
-        if(tempchoice2 == "Y" || tempchoice2 == "Yes" || tempchoice2 == "y" || tempchoice2 == "yes")
-        {
-
-            msg << "You have chosen Bulbasaur!" << end;
-            tempChoice = playerPokemon;
-                
         }
-        
     }
-    
-
-}
 
 
 
