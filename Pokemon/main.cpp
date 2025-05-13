@@ -21,7 +21,6 @@ enum class PokemonType
     Fire,
     Electric,
     Water,
-    Earth,
     Normal
     
 };
