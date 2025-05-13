@@ -1,0 +1,74 @@
+#include <iostream>
+
+enum class HealingItems
+{
+      
+    Potion,
+    Elixir
+      
+      
+  };
+  
+enum class BattleItems
+{
+      
+    Potion,
+    Elixir
+      
+  };
+
+int main() 
+{
+      
+    std::cout << "Please enter a number to select if you want to pick a healing potion(1), healing elixir(2), battle potion(3) or battle elixir(4)" << '\n';
+    int choice;
+    std::cin >> choice;
+      
+    BattleItems  bItemChosen;
+    HealingItems hItemChosen;
+   
+    switch(choice)
+    {
+        
+    case 1: 
+        hItemChosen = HealingItems::Potion; 
+        break;
+    case 2:
+        hItemChosen = HealingItems::Elixir;
+        break;
+    case 3:
+        bItemChosen = BattleItems::Potion;
+        break;
+    case 4:
+        bItemChosen = BattleItems::Elixir;
+        break;
+    };
+    
+    
+    switch(hItemChosen)
+    {
+    case HealingItems::Potion:
+        std::cout<<"You have chosen a potion to heal your pokemon with!";
+        break;
+    case HealingItems::Elixir:
+        std::cout<<"You have chosen an Elixir to heal your pokemon with!";
+        break;
+      
+    };
+    
+    switch(bItemChosen)
+    {
+      
+    case BattleItems::Potion:
+        std::cout<<"You have chosen a potion to buff your pokemon with!";
+        break;
+    case BattleItems::Elixir:
+        std::cout<<"You have chosen an Elixir to buff your pokemon with!";
+        break;
+      
+      
+    }
+     
+  
+    return 0;
+}
