@@ -5,13 +5,24 @@
 #define choice std::cin
 #define end '\n'
 
-enum PokemonChoice
+enum class PokemonChoice
 {
 
-    Charmander,
-    Bulbasaur,
-    Squirtle,
-    InvalidChoice
+       Charmander,
+       Bulbasaur,
+       Squirtle,
+       InvalidChoice
+    
+};
+
+enum class PokemonType
+{
+
+    Fire,
+    Electric,
+    Water,
+    Earth,
+    Normal
     
 };
 
@@ -19,7 +30,7 @@ enum PokemonChoice
 int main() {
     
     std::string playerName;
-    PokemonChoice Pokemon_Choice = InvalidChoice;
+    PokemonChoice Pokemon_Choice = PokemonChoice::InvalidChoice;
     msg << "What is your name?: " << end;
     std::cin >> playerName;
 
@@ -39,37 +50,37 @@ int main() {
     switch (tempChoice)
     {
     case 1:
-        Pokemon_Choice = Charmander;
+        Pokemon_Choice = PokemonChoice::Charmander;
         break;
         
     case 2:
-        Pokemon_Choice = Squirtle;
+        Pokemon_Choice = PokemonChoice::Charmander;
         break;
         
     case 3:
-        Pokemon_Choice = Bulbasaur;
+        Pokemon_Choice = PokemonChoice::Bulbasaur;
         break;
         
     default:
-        Pokemon_Choice = Charmander;
+        Pokemon_Choice = PokemonChoice::Charmander;
         break;
     }
 
     switch(Pokemon_Choice)
     {
-    case Charmander:
+    case PokemonChoice::Charmander:
         msg << "You have chosen Charmander!" << end;
         msg << "Congratulations on picking your first Pokemon, Charmander! I'm sure you will become the best of friends! "
                                                                               "It's time for you to step into the exciting world of Pokemon! "
                                                                               "Enjoy!";
         break;
-    case Squirtle:
+    case PokemonChoice::Squirtle:
         msg << "You have chosen Squirtle!" << end;
         msg << "Congratulations on picking your first Pokemon, Squirtle! I'm sure you will become the best of friends! "
                                                                               "It's time for you to step into the exciting world of Pokemon! "
                                                                               "Enjoy!";
         break;
-    case Bulbasaur:
+    case PokemonChoice::Bulbasaur:
         msg << "You have chosen Bulbasaur!" << end;
         msg << "Congratulations on picking your first Pokemon, Bulbasaur! I'm sure you will become the best of friends! "
                                                                               "It's time for you to step into the exciting world of Pokemon! "
