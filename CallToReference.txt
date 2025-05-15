@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+
+
+void castSpell(int magicLevel)
+{
+  
+  std::cout << "Casting spell with magic level: " << magicLevel << "\n";
+  
+}
+void brewPotion(int magicLevel)
+{
+  
+  magicLevel += 50;
+  std::cout << "Drinking temporary Elixr, new magic Level is: " << magicLevel << '\n';
+  
+}
+
+void brewElixir(int& magicLevel)
+{
+  
+  magicLevel += 10;
+  std::cout << "Drinking Elixr, new magic Level is: " << magicLevel << '\n';
+
+}
+
+
+int main() 
+{
+   
+   int magicLevel {30};
+   
+   castSpell(magicLevel);
+   brewElixir(magicLevel);
+   brewPotion (magicLevel);
+   std::cout << "Final magic level is: " << magicLevel << '\n';
+   
+}
