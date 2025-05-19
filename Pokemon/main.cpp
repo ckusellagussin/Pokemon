@@ -10,6 +10,7 @@ enum class PokemonChoice {
     Charmander = 1,
     Bulbasaur,
     Squirtle,
+    Pikachu,
     InvalidChoice
 
 };
@@ -33,9 +34,9 @@ class Pokemon {
     Pokemon()
     {
 
-        Name = "Unknown";
-        Type = PokemonType::Normal;
-        Health = 50;
+        Name = "Pikachu";
+        Type = PokemonType::Electric;
+        Health = 10;
         msg << "A new pokemon has been created in the default constructor!" << end;
         
     }
@@ -73,12 +74,14 @@ class Player
 public:
     std::string Name;
     Pokemon chosenPokemon;
+    
 
+    
     Player()
     {
         
         Name = "Trainer";
-        chosenPokemon = Pokemon();
+        chosenPokemon = Pokemon("Pikachu", PokemonType::Electric, 100);
         msg << "A new player called " << Name << " has been created in the default constructor!" << end;
         
     }
@@ -176,6 +179,7 @@ public:
 
         Professor Professor;
         Player player;
+        Player playerCopy(player);
         Pokemon placeholder_pokemon;
         Pokemon defaultPokemon;
         Pokemon charmander("Charmander", PokemonType::Fire, 100);
