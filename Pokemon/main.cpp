@@ -10,6 +10,7 @@ enum class PokemonChoice {
     Charmander = 1,
     Bulbasaur,
     Squirtle,
+    Pikachu,
     InvalidChoice
 
 };
@@ -30,12 +31,39 @@ class Pokemon {
     PokemonType Type;
     int Health;
 
-    Pokemon() {}
+    Pokemon()
+    {
 
-    Pokemon(std::string p_name, PokemonType p_type, int p_health) {
+        Name = "Pikachu";
+        Type = PokemonType::Electric;
+        Health = 10;
+        msg << "A new pokemon has been created in the default constructor!" << end;
+        
+    }
+
+    Pokemon(std::string p_name, PokemonType p_type, int p_health)
+    {
+        
         Name = p_name;
         Type = p_type;
         Health = p_health;
+        std::cout << "A new Pokemon called "<< Name << "has been created from the paramaterized function" << end;
+        
+    }
+
+    
+    Pokemon(const Pokemon &other)
+    {
+
+        Name = other.Name;
+        Type = other.Type;
+        Health = other.Health;
+        std::cout << "A new pokemon has been copied from: " << other.Name << end;
+    }
+
+    ~Pokemon()
+    {
+       std:: cout << Name << " has been released into the wild";
     }
 
     void attack() { std::cout << Name << " Attacks with a powerful move" << "\n"; }
@@ -44,10 +72,28 @@ class Pokemon {
 class Player
 {
 public:
-    std::string name;
+    std::string Name;
     Pokemon chosenPokemon;
+    
 
-    Player() {}
+    
+    Player()
+    {
+        
+        Name = "Trainer";
+        chosenPokemon = Pokemon("Pikachu", PokemonType::Electric, 100);
+        msg << "A new player called " << Name << " has been created in the default constructor!" << end;
+        
+    }
+
+    Player(std::string p_name, Pokemon p_Chosen)
+    {
+
+        Name = p_name;
+        chosenPokemon = p_Chosen;
+        
+        
+    }
 
     void choosePokemon(int choice) {
             switch ((PokemonChoice)choice)
@@ -86,10 +132,19 @@ public:
     }
 };
 
-    class ProfessorOak
+    class Professor
     {
     public:
         std::string name;
+
+        Professor(){};
+
+        Professor(std::string p_name)
+        {
+
+            name = p_name;
+            
+        }
 
         void greetPlayer(Player& player)
         {
@@ -106,8 +161,8 @@ public:
             std::string playerName;
             PokemonChoice Pokemon_Choice = PokemonChoice::InvalidChoice;
             msg << "But first off, I want to ask you the question of who will be the greatest trainer in the region: What is your name?: " << end;
-            std::getline (std::cin, player.name);
-            msg << "Great name! Nice to meet you "<< player.name << "! I see special things just from looking into your eyes." << end;
+            std::getline (std::cin, player.Name);
+            msg << "Great name! Nice to meet you "<< player.Name << "! I see special things just from looking into your eyes." << end;
         
             msg << "Which pokemon do you choose?: Please pick 1 for Charmander, 2 for Squirtle or 3 for Bulbasaur " << end;
             int tempChoice;
@@ -122,15 +177,39 @@ public:
     int main()
     {
 
-        ProfessorOak Professor;
+        Professor Professor;
         Player player;
+        Player playerCopy(player);
         Pokemon placeholder_pokemon;
+        Pokemon defaultPokemon;
+        Pokemon charmander("Charmander", PokemonType::Fire, 100);
+        Pokemon bulbasaur("Bulbasaur", PokemonType::Grass, 100);
+        Pokemon bulbasaurCopy;
+        
 
-        placeholder_pokemon.Name = "Pikachu";
-        placeholder_pokemon.Type = PokemonType::Electric;
-        placeholder_pokemon.Health = 40;
+        msg << defaultPokemon.Name << (int)defaultPokemon.Type << defaultPokemon.Health << end;
+        msg << charmander.Name << (int)charmander.Type << charmander.Health << end;
+        
+        bulbasaurCopy = bulbasaur;
 
-        player.name = "Trainer";
+        msg <<"Bulbasaur OG health: " << bulbasaur.Health << end;
+        msg <<"Bulbasaur Copy health: " << bulbasaurCopy.Health << end;
+
+        bulbasaurCopy.Health = 80;
+        
+        {
+
+            Pokemon Squirtle("Squirtlessssss", PokemonType::Water, 100);
+            
+        }
+
+
+        
+
+        msg <<"Bulbasaur OG health: " << bulbasaur.Health << end;
+        msg <<"Bulbasaur Copy health: " << bulbasaurCopy.Health << end;
+        
+        player.Name = "Trainer";
         Professor.name = "Professor Oak";
 
         Professor.greetPlayer(player);
