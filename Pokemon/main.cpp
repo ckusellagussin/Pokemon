@@ -2,28 +2,7 @@
 #include <valarray>
 #include "PokemonType.hpp"
 #include "PokemonChoice.hpp"
-
-#define MSG std::cout
-#define INPUT std::cin
-#define END '\n'
-
-void WaitForEnter()
-{
-
-    std::cin.get();
-        
-}
-
-void clearConsole()
-{
-
-#ifdef _WIN32
-    system("cls");
-#else
-(void)system("clear");
-#endif
-    
-}
+#include "Utility.hpp"
 
 
 class Pokemon {
@@ -157,9 +136,9 @@ public:
 
         void explainMainQuest(Player& player)
         {
-            clearConsole();
+            utility::clearConsole();
             MSG << "Professor Oak: Oak-ay "<< player.Name<< "! I am about to explain to you about your upcoming grand adventure." << END;
-            WaitForEnter();
+            utility::WaitForEnter();
             MSG << "Professor Oak: You see, becoming a Pokemon Master is no easy feat. It takes courage, wisdom, and a bit of luck" << END;
             std::cin.get();
             MSG << "Professor Oak: Your mission, should you choose to accept it (and trust me, you really dont have a choice) is to collect all the Pokemon Badges" 
@@ -184,7 +163,7 @@ public:
             PokemonChoice Pokemon_Choice = PokemonChoice::InvalidChoice;
             MSG << "But first off, I want to ask you the question of who will be the greatest trainer in the region! What is your name?: " << END;
             std::getline (std::cin, player.Name);
-            clearConsole();
+            utility::clearConsole();
             MSG << "Great name! Nice to meet you "<< player.Name << "! I see special things just from looking into your eyes." << END;
             std::cin.get();
             MSG << "Which pokemon do you choose?: Please pick 1 for Charmander, 2 for Squirtle or 3 for Bulbasaur " << END;
@@ -204,7 +183,7 @@ public:
 
         while(keepPlaying)
         {
-            clearConsole();
+            utility::clearConsole();
             
             MSG<<"What will you do next? "<< player.Name << "!" << END;
             MSG<<"1. Go into tall grass to battle wild Pokemon "<< "!" << END;
@@ -221,27 +200,24 @@ public:
 
             case 1:
                MSG << "You look around... but all the wild Pokemon are on vacation. Maybe try again later?" << END;
-                WaitForEnter();
+                utility::WaitForEnter();
                 break;
             case 2:
                 MSG << "You head to the PokeCenter, but Nurse Joy is out on a coffee break. Guess your Pokemon will have to tough it out for now!" << END;
-                WaitForEnter();
+                utility::WaitForEnter();
                 break;
             case 3:
                 MSG << "You march up to the Gym, but it's closed for renovations. Seems like even Gym Leaders need a break!" << END;
-                WaitForEnter();
+                utility::WaitForEnter();
                 break;
             case 4:
                 MSG << "You boldly step towards the Pokemon League... but the gatekeeper laughs and says, 'Maybe next time, champ!" << END;
-                WaitForEnter();
+                utility::WaitForEnter();
                 break;
             case 5:
                 MSG << "You try to quit, but Professor Oak's voice echoes: 'There's no quitting in Pokemon training!" << END;
-                WaitForEnter();
+                utility::WaitForEnter();
                 break;
-
-
-
                 
             }
             
@@ -265,6 +241,5 @@ public:
         Professor.explainMainQuest(player);
 
         GameLoop(player);
-        
         
     };
