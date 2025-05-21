@@ -239,18 +239,23 @@ public:
 
             case 1:
                MSG << "You look around... but all the wild Pokemon are on vacation. Maybe try again later?" << END;
+                WaitForEnter();
                 break;
             case 2:
                 MSG << "You head to the PokeCenter, but Nurse Joy is out on a coffee break. Guess your Pokemon will have to tough it out for now!" << END;
+                WaitForEnter();
                 break;
             case 3:
                 MSG << "You march up to the Gym, but it's closed for renovations. Seems like even Gym Leaders need a break!" << END;
+                WaitForEnter();
                 break;
             case 4:
                 MSG << "You boldly step towards the Pokemon League... but the gatekeeper laughs and says, 'Maybe next time, champ!" << END;
+                WaitForEnter();
                 break;
             case 5:
                 MSG << "You try to quit, but Professor Oak's voice echoes: 'There's no quitting in Pokemon training!" << END;
+                WaitForEnter();
                 break;
 
 
