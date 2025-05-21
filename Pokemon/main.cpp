@@ -1,5 +1,5 @@
-#include <iostream>
 #include <string>
+#include "header.hpp"
 #include <valarray>
 
 #define MSG std::cout
@@ -281,6 +281,8 @@ public:
         Professor.greetPlayer(player);
         Professor.offerPokemonChoice(player);
         Professor.explainMainQuest(player);
+
+        GameLoop(player);
         
         
     };
