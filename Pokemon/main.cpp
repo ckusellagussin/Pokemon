@@ -1,6 +1,7 @@
 #include <string>
-#include "header.hpp"
 #include <valarray>
+#include "PokemonType.hpp"
+#include "PokemonChoice.hpp"
 
 #define MSG std::cout
 #define INPUT std::cin
@@ -24,25 +25,6 @@ void clearConsole()
     
 }
 
-enum class PokemonChoice {
-
-    Charmander = 1,
-    Bulbasaur,
-    Squirtle,
-    Pikachu,
-    InvalidChoice
-
-};
-
-enum class PokemonType {
-
-    Fire,
-    Electric,
-    Grass,
-    Water,
-    Normal
-
-};
 
 class Pokemon {
    public:
