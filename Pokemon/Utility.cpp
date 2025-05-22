@@ -1,6 +1,7 @@
 #include "Utility.hpp"
 #include <iostream>
 #include <limits>
+#include <string>
 
 
 void utility::WaitForEnter()
@@ -23,12 +24,4 @@ void utility::clearConsole()
 void utility::clearInputBuffer()
 {
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-}
-
-
-int main()
-{
-
-
-    return 0;
 }
