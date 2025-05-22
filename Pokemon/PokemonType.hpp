@@ -2,10 +2,6 @@
 #define POKEMON_TYPE_HPP
 #pragma once
 
-#include <iostream>
-
-
-
 enum class PokemonType
 {
 
@@ -16,7 +12,5 @@ enum class PokemonType
         Normal
 
 };
-
-
 
 #endif
