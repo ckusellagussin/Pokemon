@@ -7,8 +7,8 @@
 
 class Player
 {
-
 public:
+    
     std::string Name;
     Pokemon chosenPokemon;
 
