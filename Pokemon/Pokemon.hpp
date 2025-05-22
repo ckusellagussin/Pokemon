@@ -2,9 +2,10 @@
 #define POKEMON_HPP
 #pragma once
 
-#include "PokemonType.hpp"
 #include <string>
 #include <iostream>
+
+enum class PokemonType;
 
 class Pokemon
 {

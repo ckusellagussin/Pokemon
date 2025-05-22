@@ -1,5 +1,8 @@
 #include "Pokemon.hpp"
 
+#include "PokemonType.hpp"
+
+
 
     std::string Name;
     PokemonType Type;

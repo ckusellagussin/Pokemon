@@ -1,10 +1,10 @@
+#include "Player.hpp"
 #include <string>
 #include <valarray>
 #include "PokemonChoice.hpp"
 #include "PokemonType.hpp"
-#include "Pokemon.hpp"
 #include "Utility.hpp"
-#include "Player.hpp"
+
 
     class Professor
     {
