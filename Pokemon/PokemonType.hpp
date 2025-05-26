@@ -9,7 +9,10 @@ enum class PokemonType
         Electric,
         Grass,
         Water,
-        Normal
+        Normal,
+        Bug,
+        Poison,
+        Rock
 
 };
 
