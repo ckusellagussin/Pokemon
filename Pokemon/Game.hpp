@@ -2,6 +2,8 @@
 #define GAME_HPP
 #pragma once
 
+#include "Grass.hpp"
+
 class Player;
 
 class Game
@@ -9,6 +11,9 @@ class Game
 public:
     Game();
     void gameLoop(Player player);   
+
+private:
+    Grass forestGrass;
 };
 
 
