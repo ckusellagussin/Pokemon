@@ -13,6 +13,7 @@ public:
     std::string Name;
     PokemonType Type;
     int Health;
+    int maxHealth;
 
     Pokemon();
 
@@ -22,7 +23,9 @@ public:
 
     ~Pokemon();
 
-    void attack();
+    void attack(Pokemon target);
+    void TakeDamage(int damage);
+    bool isFainted() const;
 };
 
 #endif
