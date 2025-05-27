@@ -12,12 +12,13 @@ std::string Name;
         Health = 10;
     }
 
-    Pokemon::Pokemon(std::string p_name, PokemonType p_type, int p_health)
+    Pokemon::Pokemon(std::string p_name, PokemonType p_type, int p_maxHealth, int p_attackPower)
     {
         
         Name = p_name;
         Type = p_type;
-        Health = p_health;
+        Health = p_maxHealth;
+        attackPower = p_attackPower;
         
     }
 
@@ -52,11 +53,20 @@ std::string Name;
     }
 
 
-    void attack(Pokemon Target)
+    void Pokemon::attack(Pokemon target)
     {
-        int damage {10};
-        MSG << Name << " Attacks" << Target.Name << " for" << damage << " damage!" << END;
-        Target.TakeDamage(damage);
+
+        int damage = attackPower;
+        MSG << Name << " Attacks" << target.Name << " for" << damage << " damage!" << END;
+        target.TakeDamage(damage);
+        
+    }
+
+    void Pokemon::heal()
+    {
+
+        Health = maxHealth;
+        
     }
 
     Pokemon::~Pokemon()
