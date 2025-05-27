@@ -8,9 +8,9 @@
 Game::Game()
     : forestGrass{  
             {
-                {"Pidgey", PokemonType::Normal, 40},
-                {"Caterpie", PokemonType::Bug, 35},
-                {"Zubat", PokemonType::Poison, 30}
+                {"Pidgey", PokemonType::Normal, 40, 10},
+                {"Caterpie", PokemonType::Bug, 35, 10},
+                {"Zubat", PokemonType::Poison, 30, 10}
             },
             80,
             "Forest"
@@ -56,8 +56,10 @@ void Game::gameLoop(Player player)
             }
         case 2:
             {
-                MSG << "You head to the PokeCenter, but Nurse Joy is out on a coffee break. Guess your Pokemon will have to tough it out for now!" << END;
+                MSG << "You head to the PokeCenter" << END;
                 std::cout.flush();
+                player.chosenPokemon.heal();
+                MSG << "Your " << player.chosenPokemon.Name <<" health is now " << player.chosenPokemon.Health << "/" << player.chosenPokemon.maxHealth << END;
                 utility::WaitForEnter();
                 break;
             }
