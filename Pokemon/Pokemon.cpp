@@ -1,10 +1,8 @@
 #include "Pokemon.hpp"
-
 #include "PokemonType.hpp"
+#include "Utility.hpp"
 
-
-
-    std::string Name;
+std::string Name;
     PokemonType Type;
 
     Pokemon::Pokemon()
@@ -33,9 +31,35 @@
 
     }
 
+    void Pokemon::TakeDamage(int damage)
+    {
+        Health -= damage;
+
+            if(Health < 0)
+            {
+                Health = 0;
+            
+            }
+
+            
+    }
+
+    bool Pokemon::isFainted() const
+    {
+
+        return Health <= 0;
+            
+    }
+
+
+    void attack(Pokemon Target)
+    {
+        int damage {10};
+        MSG << Name << " Attacks" << Target.Name << " for" << damage << " damage!" << END;
+        Target.TakeDamage(damage);
+    }
+
     Pokemon::~Pokemon()
     {
      
     }
-
-    void attack() { std::cout << Name << " Attacks with a powerful move" << "\n"; }
