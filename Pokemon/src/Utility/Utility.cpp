@@ -4,24 +4,28 @@
 #include <string>
 
 
-void utility::WaitForEnter()
+namespace N_Utility
 {
-    std::cin.get();
-}
+    void utility::WaitForEnter()
+    {
+        std::cin.get();
+    }
 
 
-void utility::clearConsole()
-{
+    void utility::clearConsole()
+    {
     
 #ifdef _WIN32
-    system("cls");
+        system("cls");
 #else
-    (void)system("clear");
+        (void)system("clear");
 #endif
     
-}
+    }
 
-void utility::clearInputBuffer()
-{
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    void utility::clearInputBuffer()
+    {
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    }
+
 }

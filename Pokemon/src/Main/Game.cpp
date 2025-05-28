@@ -2,10 +2,10 @@
 #include "../../include/Main/Game.hpp"
 #include "../../include/Battle/WildEncounterManager.hpp"
 #include "../../include/Pokemon/PokemonType.hpp"
-#include "../../include/Utility/Utility.hpp"
 #include "../../include/Battle/BattleManager.hpp"
 #include <iostream>
 
+using namespace N_Utility;
 
 
 Game::Game()

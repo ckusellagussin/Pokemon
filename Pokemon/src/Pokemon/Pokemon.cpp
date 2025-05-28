@@ -2,6 +2,8 @@
 #include "../../include/Pokemon/PokemonType.hpp"
 #include "../../include/Utility/Utility.hpp"
 
+using namespace N_Utility;
+
 
 std::string Name;
     PokemonType Type;
