@@ -2,8 +2,8 @@
 #include <valarray>
 #include "../../include/Character/Player.hpp"
 #include "../../include/Pokemon/Pokemon.hpp"
-#include "../../include/Utility/Utility.hpp"
 
+using namespace N_Utility;
 
 void BattleManager::StartBattle(Player& player, Pokemon& wildPokemon)
 {

@@ -4,6 +4,7 @@
 #include <string>
 #include <iostream>
 
+using namespace N_Utility;
 
 ProfessorOak::ProfessorOak(std::string p_name)
 {

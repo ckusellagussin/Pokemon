@@ -6,16 +6,19 @@
 #define INPUT std::cin
 #define END '\n'
 
-class utility
+namespace N_Utility
 {
-public:
-    static void WaitForEnter();
+    class utility
+    {
+    public:
+        static void WaitForEnter();
 
-    static void clearConsole();
+        static void clearConsole();
 
-    static void clearInputBuffer();
+        static void clearInputBuffer();
     
-};
+    }; 
+}
 
 
 #endif
