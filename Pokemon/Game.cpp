@@ -5,12 +5,14 @@
 #include "Utility.hpp"
 #include <iostream>
 
+#include "BattleManager.hpp"
+
 Game::Game()
     : forestGrass{  
             {
                 {"Pidgey", PokemonType::Normal, 40, 10},
                 {"Caterpie", PokemonType::Bug, 35, 10},
-                {"Zubat", PokemonType::Poison, 30, 10}
+                {"Zubat", PokemonType::Poison, 30, 10},
             },
             80,
             "Forest"
@@ -24,6 +26,7 @@ void Game::gameLoop(Player player)
 {
     bool keepPlaying {true};
     int choice;
+    battle_manager battleManager;
 
     while(keepPlaying)
     {
@@ -36,6 +39,7 @@ void Game::gameLoop(Player player)
         MSG<<"4. Enter Pokemon League"<<"!"<<END;
         MSG<<"5. Quit"<<"!"<<END;
         MSG<<"Enter the number corresponding to the choice "<< player.Name << "!" << END;
+        MSG << "Name: " << player.chosenPokemon.Name << " Health: " << player.chosenPokemon.Health << " Attack Power: " << player.chosenPokemon.attackPower << END;
 
         std::cout.flush();
         INPUT >> choice;
@@ -48,9 +52,9 @@ void Game::gameLoop(Player player)
         case 1:
             {
                 WildEncounterManager encounterManager;
-                Pokemon encounteredPokemon =
-                    encounterManager.getRandomPokemonFromGrass(forestGrass);
+                Pokemon encounteredPokemon = encounterManager.getRandomPokemonFromGrass(forestGrass);
                 std::cout << "A wild " << encounteredPokemon.Name << " appeared!" << END;
+                battleManager.StartBattle(player,encounteredPokemon);
                 utility::WaitForEnter();
                 break;
             }
