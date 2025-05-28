@@ -4,10 +4,13 @@
 #include "PokemonType.hpp"
 #include <string>
 #include <vector>
+#include <cstdlib>
+#include <ctime>
 #include "Utility.hpp"
 
     int main()
     {
+        srand(time(0));
         
         ProfessorOak Professor("Professor Oak");
         Player player;

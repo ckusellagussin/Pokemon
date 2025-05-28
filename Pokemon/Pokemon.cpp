@@ -10,17 +10,12 @@ std::string Name;
         Name = "Pikachu";
         Type = PokemonType::Electric;
         Health = 10;
+        maxHealth = 40;
+        attackPower = 10;
     }
 
     Pokemon::Pokemon(std::string p_name, PokemonType p_type, int p_maxHealth, int p_attackPower)
-    {
-        
-        Name = p_name;
-        Type = p_type;
-        Health = p_maxHealth;
-        attackPower = p_attackPower;
-        
-    }
+     : Name(p_name), Type(p_type), Health(p_maxHealth), maxHealth(p_maxHealth), attackPower(p_attackPower) {}
 
     
     Pokemon::Pokemon(const Pokemon &other)
@@ -29,6 +24,8 @@ std::string Name;
         Name = other.Name;
         Type = other.Type;
         Health = other.Health;
+        maxHealth = other.maxHealth;
+        attackPower = other.attackPower;
 
     }
 
@@ -53,14 +50,16 @@ std::string Name;
     }
 
 
-    void Pokemon::attack(Pokemon target)
+    void Pokemon::attack(Pokemon &target)
     {
 
         int damage = attackPower;
-        MSG << Name << " Attacks" << target.Name << " for" << damage << " damage!" << END;
+        MSG << Name << " Attacks " << target.Name << " for " << damage << " damage!" << END;
+        MSG << target.Name << " has " << target.Health << "from " << target.maxHealth << END;
         target.TakeDamage(damage);
         
     }
+
 
     void Pokemon::heal()
     {

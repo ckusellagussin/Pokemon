@@ -6,7 +6,6 @@
 WildEncounterManager::WildEncounterManager()
 {
 
-    srand(time(0));
     
 };
 

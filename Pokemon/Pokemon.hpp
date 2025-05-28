@@ -24,7 +24,7 @@ public:
 
     ~Pokemon();
 
-    void attack(Pokemon target);
+    void attack(Pokemon &target);
     void TakeDamage(int damage);
     bool isFainted() const;
     void heal();

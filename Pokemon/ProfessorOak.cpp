@@ -24,7 +24,7 @@ void ProfessorOak::greetPlayer(Player& player)
 
 void ProfessorOak::explainMainQuest(Player& player)
 {
-    utility::clearConsole();
+    
     MSG << "Professor Oak: Oak-ay "<< player.Name<< "! I am about to explain to you about your upcoming grand adventure." << END;
     utility::WaitForEnter();
     MSG << "Professor Oak: You see, becoming a Pokemon Master is no easy feat. It takes courage, wisdom, and a bit of luck" << END;
