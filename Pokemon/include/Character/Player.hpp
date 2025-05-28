@@ -2,8 +2,9 @@
 #define PLAYER_HPP
 #pragma once
 
-#include "Utility.hpp"
-#include "Pokemon.hpp"
+#include "../Utility/Utility.hpp"
+#include "../Pokemon/Pokemon.hpp"
+#include <string>
 
 class Player
 {

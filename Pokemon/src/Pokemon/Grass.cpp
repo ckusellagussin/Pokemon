@@ -1,5 +1,5 @@
-#include "Grass.hpp"
-#include "PokemonType.hpp"
+#include "../../include/Pokemon/Grass.hpp"
+#include "../../include/Pokemon/PokemonType.hpp"
 
 Grass forestGrass = {
     {{"Pidgey", PokemonType:: Normal, 40,10}, {"Caterpie", PokemonType:: Bug, 35,10}},

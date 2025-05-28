@@ -3,7 +3,8 @@
 #pragma once
 
 #include "BattleState.hpp"
-#include "Player.hpp"
+#include "../Character/Player.hpp"
+#include "../Pokemon/Pokemon.hpp"
 
 class BattleManager
 {
@@ -12,7 +13,7 @@ class BattleManager
     
     private:
         BattleState battleState;
-        void battle(Pokemon& playerPokemon, Pokemon& wildPokemon, Player player);
+        void battle(Player player);
         void HandleBattleOutcome();
         void updateBattleState();
     

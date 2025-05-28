@@ -1,12 +1,11 @@
-#include "Game.hpp"
-#include "ProfessorOak.hpp"
-#include "Player.hpp"
-#include "PokemonType.hpp"
+#include "./include/Main/Game.hpp"
+#include "./include/Character/ProfessorOak.hpp"
+#include "./include/Character/Player.hpp"
 #include <string>
 #include <vector>
 #include <cstdlib>
 #include <ctime>
-#include "Utility.hpp"
+
 
     int main()
     {
