@@ -26,7 +26,7 @@ void Game::gameLoop(Player player)
 {
     bool keepPlaying {true};
     int choice;
-    battle_manager battleManager;
+    BattleManager battleManager;
 
     while(keepPlaying)
     {

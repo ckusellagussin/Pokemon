@@ -1,22 +1,17 @@
 #ifndef BATTLE_STATE_HPP
 #define BATTLE_STATE_HPP
 #pragma once
+#include "Pokemon.hpp"
 
-class battlestate
-{
-public:
-
-    battlestate();
-
-    struct battlestate
+    struct BattleState
     {
-        
 
+        Pokemon* playerPokemon;
+        Pokemon* wildPokemon;
+        bool playerTurn;
+        bool battleOutgoing;
         
     };
     
-    
-    
-};
 
 #endif

@@ -2,18 +2,19 @@
 #define BATTLE_MANAGER_HPP
 #pragma once
 
-#include "Pokemon.hpp"
+#include "BattleState.hpp"
 #include "Player.hpp"
 
-class battle_manager
+class BattleManager
 {
-    
     public:
         void StartBattle(Player& player, Pokemon& wildPokemon);
     
     private:
+        BattleState battleState;
         void battle(Pokemon& playerPokemon, Pokemon& wildPokemon, Player player);
-        void HandleBattleOutcome(Player& playerPokemon, bool playerWon);
+        void HandleBattleOutcome();
+        void updateBattleState();
     
 };
 
