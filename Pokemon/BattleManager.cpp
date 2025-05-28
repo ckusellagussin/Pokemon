@@ -11,11 +11,11 @@ void BattleManager::StartBattle(Player& player, Pokemon& wildPokemon)
     battleState.playerTurn = true;
     battleState.battleOutgoing = true;
 
-    battle(player.chosenPokemon, wildPokemon, player);
+    battle(player);
     
 }
 
-void BattleManager::battle(Pokemon& playerPokemon, Pokemon& wildPokemon, Player player)
+void BattleManager::battle(Player player)
 {
 
    while(battleState.battleOutgoing)
@@ -33,6 +33,7 @@ void BattleManager::battle(Pokemon& playerPokemon, Pokemon& wildPokemon, Player 
             battleState.wildPokemon->attack((*battleState.playerPokemon));
             
         }
+       updateBattleState();
 
        battleState.playerTurn = !battleState.playerTurn;
 
@@ -77,7 +78,7 @@ void BattleManager::HandleBattleOutcome()
     else if (battleState.wildPokemon->isFainted())
     {
 
-        MSG << "Ah your " << battleState.playerPokemon->Name <<" has come out victorious against "<< battleState.wildPokemon << END;
+        MSG << "Ah your " << battleState.playerPokemon->Name <<" has come out victorious!" << END;
         
     }
     

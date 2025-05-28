@@ -11,8 +11,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pokemon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pokemon/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BattleManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/BattleManager.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BattleManager.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/BattleManager.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BattleState.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/BattleState.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/vc143.idb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/vc143.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/Pokemon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/Pokemon.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -357,7 +362,7 @@
       <workItem from="1748279340608" duration="828000" />
       <workItem from="1748280184135" duration="6825000" />
       <workItem from="1748342431544" duration="14909000" />
-      <workItem from="1748422200745" duration="8734000" />
+      <workItem from="1748422200745" duration="10290000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />

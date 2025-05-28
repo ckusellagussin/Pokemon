@@ -12,7 +12,7 @@ class BattleManager
     
     private:
         BattleState battleState;
-        void battle(Pokemon& playerPokemon, Pokemon& wildPokemon, Player player);
+        void battle(Player player);
         void HandleBattleOutcome();
         void updateBattleState();
     
