@@ -1,58 +1,86 @@
 #include "BattleManager.hpp"
-
 #include <valarray>
 #include "Utility.hpp"
 
 
-void battle_manager::StartBattle(Player& player, Pokemon& wildPokemon)
+void BattleManager::StartBattle(Player& player, Pokemon& wildPokemon)
 {
-    
+
+    battleState.playerPokemon = &player.chosenPokemon;
+    battleState.wildPokemon = &wildPokemon;
+    battleState.playerTurn = true;
+    battleState.battleOutgoing = true;
+
     battle(player.chosenPokemon, wildPokemon, player);
     
 }
 
-void battle_manager::battle(Pokemon& playerPokemon, Pokemon& wildPokemon, Player player)
+void BattleManager::battle(Pokemon& playerPokemon, Pokemon& wildPokemon, Player player)
 {
 
-    while(!playerPokemon.isFainted() && !wildPokemon.isFainted())
-    {
+   while(battleState.battleOutgoing)
+   {
 
-        playerPokemon.attack(wildPokemon);
-        utility::WaitForEnter();
-        
-    }
+        if(battleState.playerTurn)
+        {
 
-    if(!wildPokemon.isFainted())
-    {
+            battleState.playerPokemon->attack(*battleState.wildPokemon);
+            
+        }
+        else
+        {
 
-        wildPokemon.attack(playerPokemon);
-        utility::WaitForEnter();
-        
-    }
+            battleState.wildPokemon->attack((*battleState.playerPokemon));
+            
+        }
 
-    utility::WaitForEnter();
+       battleState.playerTurn = !battleState.playerTurn;
 
-    HandleBattleOutcome(player,playerPokemon.isFainted());
+       utility::WaitForEnter();
+
+       
+   }
+
+    HandleBattleOutcome();
     
 }
 
-void battle_manager::HandleBattleOutcome(Player& playerPokemon, bool playerWon)
+
+void BattleManager::updateBattleState()
 {
 
-    if(playerWon)
+    if(battleState.playerPokemon->isFainted())
     {
 
-        MSG << playerPokemon.chosenPokemon.Name << "is the winner of this duel!" << END;
+        battleState.battleOutgoing = false;
         
     }
-    else
+    else if (battleState.wildPokemon -> isFainted())
     {
 
-        MSG << playerPokemon.chosenPokemon.Name << "has lost this duel, please heal your Pokemon at the centre" << END;
+        battleState.battleOutgoing = false;
         
     }
-    utility::WaitForEnter();
-    std::cout << "You lose!" << END;
+
+    
+}
+
+
+void BattleManager::HandleBattleOutcome()
+{
+    if (battleState.playerPokemon->isFainted())
+    {
+
+        MSG << "Ah your " << battleState.playerPokemon->Name <<" has fainted" << END;
+        
+    }
+    else if (battleState.wildPokemon->isFainted())
+    {
+
+        MSG << "Ah your " << battleState.playerPokemon->Name <<" has come out victorious against "<< battleState.wildPokemon << END;
+        
+    }
+    
     
 }
 
