@@ -1,6 +1,7 @@
-#include "ProfessorOak.hpp"
-#include "Player.hpp"
-#include "Utility.hpp"
+#include "../../include/Character/ProfessorOak.hpp"
+#include "../../include/Character/Player.hpp"
+#include "../../include/Utility/Utility.hpp"
+#include <string>
 #include <iostream>
 
 

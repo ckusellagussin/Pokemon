@@ -1,7 +1,7 @@
 #ifndef BATTLE_STATE_HPP
 #define BATTLE_STATE_HPP
 #pragma once
-#include "Pokemon.hpp"
+#include "../Pokemon/Pokemon.hpp"
 
     struct BattleState
     {

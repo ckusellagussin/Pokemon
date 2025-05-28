@@ -1,8 +1,9 @@
-#include "PokemonChoice.hpp"
-#include "PokemonType.hpp"
-#include "Utility.hpp"
-#include "Player.hpp"
-#include "Pokemon.hpp"
+#include "../../include/Pokemon/PokemonChoice.hpp"
+#include "../../include/Pokemon/PokemonType.hpp"
+#include "../../include/Utility/Utility.hpp"
+#include "../../include/Character/Player.hpp"
+#include "../../include/Pokemon/Pokemon.hpp"
+
 
     Player::Player()
     {

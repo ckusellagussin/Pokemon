@@ -3,7 +3,8 @@
 #pragma once
 
 #include "BattleState.hpp"
-#include "Player.hpp"
+#include "../Character/Player.hpp"
+#include "../Pokemon/Pokemon.hpp"
 
 class BattleManager
 {

@@ -1,6 +1,8 @@
-#include "BattleManager.hpp"
+#include "../../include/Battle/BattleManager.hpp"
 #include <valarray>
-#include "Utility.hpp"
+#include "../../include/Character/Player.hpp"
+#include "../../include/Pokemon/Pokemon.hpp"
+#include "../../include/Utility/Utility.hpp"
 
 
 void BattleManager::StartBattle(Player& player, Pokemon& wildPokemon)
