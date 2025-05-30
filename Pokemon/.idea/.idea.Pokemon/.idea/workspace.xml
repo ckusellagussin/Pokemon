@@ -8,21 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76848a35-e7a8-4068-95a7-3f62e568fd20" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/link.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/vc143.idb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/vc143.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Utility/Utility.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Utility/Utility.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Battle/BattleManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/BattleManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Character/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Character/Player.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Character/ProfessorOak.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Character/ProfessorOak.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pokemon/Pokemon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pokemon/Pokemon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utility/Utility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/Utility.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/Pokemon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/Pokemon.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Pokemon/Caterpie.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Pokemon/Pidgey.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Pokemon/Pikachu.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Pokemon/Zubat.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pokemon/Caterpie.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pokemon/Pidgey.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pokemon/Pikachu.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pokemon/Zubat.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pokemon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pokemon/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon.vcxproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +59,7 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;C++ Project.Pokemon.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Feature__6__Battle__Loop&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Feature__7__Inhertitance&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -132,6 +127,7 @@
       <workItem from="1748280184135" duration="6825000" />
       <workItem from="1748342431544" duration="14909000" />
       <workItem from="1748422200745" duration="16899000" />
+      <workItem from="1748597402095" duration="4956000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
