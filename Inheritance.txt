@@ -1,0 +1,55 @@
+#include <iostream>
+
+using namespace std;
+
+
+class MasterMachine
+{
+public:
+    MasterMachine()
+    {
+        
+        std::cout<< "Master machine activated" << std::endl;
+        
+    }
+    
+    ~MasterMachine()
+    {
+        
+        std::cout<< "Master machine deactivated" << std::endl;
+        
+    }
+    
+    
+};
+
+class AssistantDrone : public MasterMachine
+{
+    public:
+     AssistantDrone()
+    {
+        
+        std::cout<< "Assistant Drone activated" << std::endl;
+        
+    }
+    
+    ~AssistantDrone()
+    {
+        
+        std::cout<< "Assistant Drone deactivated" << std::endl;
+        
+    }
+    
+    
+    
+};
+
+
+int main()
+{
+    
+    AssistantDrone b;
+    return 0;
+    
+    
+}

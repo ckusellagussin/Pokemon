@@ -8,16 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76848a35-e7a8-4068-95a7-3f62e568fd20" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/include/Pokemon/Caterpie.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Pokemon/Pidgey.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Pokemon/Pikachu.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Pokemon/Zubat.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pokemon/Caterpie.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pokemon/Pidgey.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pokemon/Pikachu.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pokemon/Zubat.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pokemon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pokemon/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon.vcxproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +118,8 @@
       <workItem from="1748280184135" duration="6825000" />
       <workItem from="1748342431544" duration="14909000" />
       <workItem from="1748422200745" duration="16899000" />
-      <workItem from="1748597402095" duration="4956000" />
+      <workItem from="1748597402095" duration="7195000" />
+      <workItem from="1749558329839" duration="5779000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
