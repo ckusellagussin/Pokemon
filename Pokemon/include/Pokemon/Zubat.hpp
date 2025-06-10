@@ -9,6 +9,7 @@ class Zubat : public Pokemon
 
 public:
     Zubat();
+private:
     void superSonic(Pokemon& Target);
 
     

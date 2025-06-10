@@ -74,13 +74,13 @@ void BattleManager::HandleBattleOutcome()
     if (battleState.playerPokemon->isFainted())
     {
 
-        MSG << "Ah your " << battleState.playerPokemon->Name <<" has fainted" << END;
+        MSG << "Ah your " << battleState.playerPokemon->getName() <<" has fainted" << END;
         
     }
     else if (battleState.wildPokemon->isFainted())
     {
 
-        MSG << "Ah your " << battleState.playerPokemon->Name <<" has come out victorious!" << END;
+        MSG << "Ah your " << battleState.playerPokemon->getName() <<" has come out victorious!" << END;
         
     }
     
