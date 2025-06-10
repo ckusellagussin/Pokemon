@@ -530,7 +530,9 @@
       <LinkCompiled>true</LinkCompiled>
       <AdditionalIncludeDirectories>;C:\Users\Casey\Documents\Dependencies\vcpkg\installed\x64-windows\include</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="src\Pokemon\Bulbasaur.cpp" />
     <ClCompile Include="src\Pokemon\Caterpie.cpp" />
+    <ClCompile Include="src\Pokemon\Charmander.cpp" />
     <ClCompile Include="src\Pokemon\Grass.cpp">
       <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -683,6 +685,7 @@
       <LinkCompiled>true</LinkCompiled>
       <AdditionalIncludeDirectories>;C:\Users\Casey\Documents\Dependencies\vcpkg\installed\x64-windows\include</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="src\Pokemon\Squrtle.cpp" />
     <ClCompile Include="src\Pokemon\Zubat.cpp" />
     <ClCompile Include="src\Utility\Utility.cpp">
       <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
@@ -772,13 +775,16 @@
     <ClInclude Include="include\Battle\WildEncounterManager.hpp" />
     <ClInclude Include="include\Character\ProfessorOak.hpp" />
     <ClInclude Include="include\Main\Game.hpp" />
+    <ClInclude Include="include\Pokemon\Bulbasaur.hpp" />
     <ClInclude Include="include\Pokemon\Caterpie.hpp" />
+    <ClInclude Include="include\Pokemon\Charmander.hpp" />
     <ClInclude Include="include\Pokemon\Grass.hpp" />
     <ClInclude Include="include\Pokemon\Pidgey.hpp" />
     <ClInclude Include="include\Pokemon\Pikachu.hpp" />
     <ClInclude Include="include\Pokemon\Pokemon.hpp" />
     <ClInclude Include="include\Pokemon\PokemonChoice.hpp" />
     <ClInclude Include="include\Pokemon\PokemonType.hpp" />
+    <ClInclude Include="include\Pokemon\Squirtle.hpp" />
     <ClInclude Include="include\Pokemon\Zubat.hpp" />
     <ClInclude Include="include\Utility\Utility.hpp" />
   </ItemGroup>
