@@ -10,11 +10,6 @@ enum class PokemonType;
 class Pokemon
 {
 public:
-    std::string Name;
-    PokemonType Type;
-    int Health;
-    int maxHealth;
-    int attackPower;
     
     Pokemon();
 
@@ -28,6 +23,20 @@ public:
     void TakeDamage(int damage);
     bool isFainted() const;
     void heal();
+    
+    std::string getName() {return Name;}
+    int getAttackPower() {return attackPower;}
+    int getMaxHealth() {return maxHealth;}
+    int getHealth() {return Health;}
+
+
+
+protected:
+    std::string Name;
+    PokemonType Type;
+    int Health;
+    int maxHealth;
+    int attackPower;
     
 };
 

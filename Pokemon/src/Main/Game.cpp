@@ -40,7 +40,7 @@ void Game::gameLoop(Player player)
         MSG<<"4. Enter Pokemon League"<<"!"<<END;
         MSG<<"5. Quit"<<"!"<<END;
         MSG<<"Enter the number corresponding to the choice "<< player.Name << "!" << END;
-        MSG << "Name: " << player.chosenPokemon.Name << " Health: " << player.chosenPokemon.Health << " Attack Power: " << player.chosenPokemon.attackPower << END;
+        MSG << "Name: " << player.chosenPokemon.getName() << " Health: " << player.chosenPokemon.getHealth() << " Attack Power: " << player.chosenPokemon.getAttackPower() << END;
 
         std::cout.flush();
         INPUT >> choice;
@@ -54,7 +54,7 @@ void Game::gameLoop(Player player)
             {
                 WildEncounterManager encounterManager;
                 Pokemon encounteredPokemon = encounterManager.getRandomPokemonFromGrass(forestGrass);
-                std::cout << "A wild " << encounteredPokemon.Name << " appeared!" << END;
+                std::cout << "A wild " << encounteredPokemon.getName() << " appeared!" << END;
                 battleManager.StartBattle(player,encounteredPokemon);
                 utility::WaitForEnter();
                 break;
@@ -64,7 +64,7 @@ void Game::gameLoop(Player player)
                 MSG << "You head to the PokeCenter" << END;
                 std::cout.flush();
                 player.chosenPokemon.heal();
-                MSG << "Your " << player.chosenPokemon.Name <<" health is now " << player.chosenPokemon.Health << "/" << player.chosenPokemon.maxHealth << END;
+                MSG << "Your " << player.chosenPokemon.getName() <<" health is now " << player.chosenPokemon.getHealth() << "/" << player.chosenPokemon.getMaxHealth() << END;
                 utility::WaitForEnter();
                 break;
             }

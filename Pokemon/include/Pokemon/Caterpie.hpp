@@ -9,6 +9,7 @@ class Caterpie : public Pokemon
 
 public:
     Caterpie();
+private:
     void bugBite(Pokemon& Target);
 
     
