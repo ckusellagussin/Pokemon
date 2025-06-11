@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+
+
+int main(){
+   
+
+int tool1 {15};
+int tool2 {30};
+
+int* compartment1 = &tool1;
+int* compartment2 = &tool2;
+
+std::cout << *(compartment1) << std::endl;
+std::cout << *(compartment2) << std::endl;
+
+compartment1 = &tool2;
+compartment2 = &tool1;
+
+std::cout << *(compartment1) << std::endl;
+std::cout << *(compartment2) << std::endl;
+
+   
+}
