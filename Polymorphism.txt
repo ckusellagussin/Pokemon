@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+class Transaction
+{
+public:
+
+    void Process()
+    {
+        
+        std::cout << "Processing a standard transaction" << std::endl;
+        
+    }
+    
+};
+
+class CreditTransaction : public Transaction
+{
+public:
+
+    void Process()
+    {
+        
+        std::cout << "Processing a credit transaction" << std::endl;
+        
+    }
+    
+};
+
+int main()
+{
+
+   CreditTransaction c;
+   c.Transaction::Process();
+  
+}
