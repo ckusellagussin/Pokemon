@@ -1,0 +1,50 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+class Robot
+{
+public:
+    std::string name;
+    std::string task;
+    
+    Robot(std::string a, std::string b)
+    {
+        
+        this -> name = a;
+        this -> task = b;
+        
+    }
+    
+    void output()
+    {
+        
+        std::cout << "Name: " << name << std::endl;
+        std::cout << "Task: " << task << std::endl;
+        
+    }
+    
+    
+};
+
+
+int main() {
+	
+	Robot *robot = new Robot("Robby", "To churn butter");
+	robot -> output();
+	
+	delete robot;
+	
+	Robot *robot2 = new Robot("Robbey", "Assembling Parts");
+	Robot *robot3 = new Robot("Robey", "Painting Cars");
+	Robot *robot4 = new Robot("Robbo", "Inspecting Quality");
+	
+	robot2 -> output();
+	robot3 -> output();
+	robot4 -> output();
+	
+	delete robot2;
+	delete robot3;
+	delete robot4;
+
+}
