@@ -11,15 +11,19 @@
     {
         srand(time(0));
         
-        ProfessorOak Professor("Professor Oak");
-        Player player;
+        ProfessorOak* Professor = new ProfessorOak("Professor Oak");
+        Player* player = new Player();
         
-        Professor.greetPlayer(player);
-        Professor.offerPokemonChoice(player);
-        Professor.explainMainQuest(player);
+        Professor->greetPlayer(*player);
+        Professor->offerPokemonChoice(*player);
+        Professor->explainMainQuest(*player);
 
-        Game game;
-        game.gameLoop(player);
+        Game* game = new Game();
+        game->gameLoop(*player);
+
+        delete Professor;
+        delete player;
+        delete game;
 
         return 0;
     };
