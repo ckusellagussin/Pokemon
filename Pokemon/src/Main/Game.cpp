@@ -27,7 +27,7 @@ void Game::gameLoop(Player player)
 {
     bool keepPlaying {true};
     int choice;
-    BattleManager battleManager;
+    BattleManager* battleManager = new BattleManager();
 
     while(keepPlaying)
     {
@@ -55,7 +55,7 @@ void Game::gameLoop(Player player)
                 WildEncounterManager encounterManager;
                 Pokemon encounteredPokemon = encounterManager.getRandomPokemonFromGrass(forestGrass);
                 std::cout << "A wild " << encounteredPokemon.getName() << " appeared!" << END;
-                battleManager.StartBattle(player,encounteredPokemon);
+                battleManager->StartBattle(player,encounteredPokemon);
                 utility::WaitForEnter();
                 break;
             }

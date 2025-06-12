@@ -27,9 +27,8 @@
             case PokemonChoice::Charmander:
                 MSG << "You have chosen Charmander!" << END;
                 chosenPokemon = Pokemon("Charmander", PokemonType::Fire, 100,10);
-                MSG << chosenPokemon.getName() << " has " << chosenPokemon.getAttackPower() << " attack power" << END;
                 MSG << "Congratulations on picking your first Pokemon, Charmander! I'm sure you will become the best "
-                       "of friends! "<<std::cin.get() <<
+                       "of friends! "<< std::cin.get() <<
                        "It's time for you to step into the exciting world of Pokemon! "
                        "Enjoy!" <<END;
                 break;
