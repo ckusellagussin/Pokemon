@@ -1,0 +1,68 @@
+#include <iostream>
+using namespace std;
+
+class OperationsCore
+{
+    public:
+        
+        
+        virtual void executeTask()
+        {
+        
+            std::cout <<"Executing general task protocol" << endl;          
+            
+        }
+    
+    
+    
+};
+
+class CyberAgent: public OperationsCore
+{
+    public:
+     void executeTask()
+        {
+        
+            std::cout <<"CyberAgent executing cybersecurity protocol" << endl;          
+            
+        }
+    
+    
+    
+};
+
+
+class DataMiner : public OperationsCore
+{
+    public:
+     void executeTask()
+        {
+        
+            std::cout <<"DataMiner extracting data sets" << endl;          
+            
+        }
+ 
+   
+};
+
+class LogisticsBot : public OperationsCore
+{
+    public:
+    
+    
+};
+
+
+int main() 
+{
+ 
+ CyberAgent* CA = new CyberAgent();
+ DataMiner* DA = new DataMiner();
+ LogisticsBot* LB = new LogisticsBot();
+ 
+ CA->executeTask();
+ DA->executeTask();
+ LB->executeTask();
+ 
+ 
+}
