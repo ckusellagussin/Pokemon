@@ -10,11 +10,11 @@ class Player
 {
 public:
     
-    std::string Name;
-    Pokemon chosenPokemon;
+    std::string name;
+    Pokemon* chosenPokemon;
 
     Player();
-    Player(std::string p_name, Pokemon p_Chosen);
+    Player(std::string p_name);
 
     void choosePokemon(int choice);
     

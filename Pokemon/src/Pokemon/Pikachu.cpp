@@ -13,3 +13,10 @@ void Pikachu::thunderShock(Pokemon& Target)
     
 }
 
+void Pikachu::attack(Pokemon* target)
+{
+    thunderShock(*target);
+    
+}
+
+

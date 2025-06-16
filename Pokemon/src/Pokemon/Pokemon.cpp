@@ -53,13 +53,13 @@ std::string Name;
     }
 
 
-    void Pokemon::attack(Pokemon &target)
+    void Pokemon::attack(Pokemon* target)
     {
 
         int damage = attackPower;
-        MSG << Name << " Attacks " << target.Name << " for " << damage << " damage!" << END;
-        MSG << target.Name << " has " << target.Health << "from " << target.maxHealth << END;
-        target.TakeDamage(damage);
+        MSG << Name << " Attacks " << target->Name << " for " << damage << " damage!" << END;
+        MSG << target->Name<< " has " << target->Health << "from " << target->maxHealth << END;
+        target->TakeDamage(damage);
         
     }
 

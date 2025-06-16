@@ -13,4 +13,11 @@ void Squrtle::waterSplash(Pokemon& Target)
     
 }
 
+void Squrtle::attack(Pokemon* target)
+{
+    waterSplash(*target);
+    
+}
+
+
 

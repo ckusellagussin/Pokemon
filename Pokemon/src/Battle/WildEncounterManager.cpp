@@ -11,11 +11,13 @@ WildEncounterManager::WildEncounterManager()
     
 };
 
-Pokemon WildEncounterManager::getRandomPokemonFromGrass(const Grass& grass)
+Pokemon* WildEncounterManager::getRandomPokemonFromGrass(Grass& grass)
 {
 
     int randomIndex = rand() % grass.pokemonList.size();
-    return grass.pokemonList[randomIndex];
+
+    Pokemon* encounteredPokemon = &grass.pokemonList[randomIndex];
+    return encounteredPokemon;
     
 }
 

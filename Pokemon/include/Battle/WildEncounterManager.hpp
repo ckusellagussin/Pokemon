@@ -11,7 +11,7 @@ class WildEncounterManager
 public:
 
     WildEncounterManager();
-    Pokemon getRandomPokemonFromGrass(const Grass& grass);
+    Pokemon* getRandomPokemonFromGrass(Grass& grass);
 
     
 };

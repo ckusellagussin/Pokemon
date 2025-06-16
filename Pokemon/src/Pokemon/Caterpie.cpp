@@ -15,3 +15,7 @@ void Caterpie::bugBite(Pokemon& Target)
     
 }
 
+void Caterpie::attack(Pokemon* target)
+{
+    bugBite(*target);
+}

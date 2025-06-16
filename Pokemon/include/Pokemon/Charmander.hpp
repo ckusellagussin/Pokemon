@@ -11,6 +11,7 @@ public:
     Charmander();
 private:
     void flameBurst(Pokemon& Target);
+    void attack(Pokemon* target) override;
    
 
     

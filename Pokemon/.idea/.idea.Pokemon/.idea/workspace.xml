@@ -9,6 +9,43 @@
   <component name="ChangeListManager">
     <list default="true" id="76848a35-e7a8-4068-95a7-3f62e568fd20" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pokemon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pokemon/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.ilk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/link.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/link.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/vc143.idb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/vc143.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Battle/BattleManager.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Battle/BattleManager.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Battle/WildEncounterManager.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Battle/WildEncounterManager.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Character/Player.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Character/Player.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Main/Game.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Main/Game.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Pokemon/Bulbasaur.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Pokemon/Bulbasaur.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Pokemon/Caterpie.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Pokemon/Caterpie.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Pokemon/Charmander.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Pokemon/Charmander.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Pokemon/Pidgey.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Pokemon/Pidgey.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Pokemon/Pikachu.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Pokemon/Pikachu.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Pokemon/Pokemon.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Pokemon/Pokemon.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Pokemon/Squirtle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Pokemon/Squirtle.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Pokemon/Zubat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Pokemon/Zubat.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Battle/BattleManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/BattleManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Battle/WildEncounterManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/WildEncounterManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Character/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Character/Player.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Character/ProfessorOak.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Character/ProfessorOak.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pokemon/Bulbasaur.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pokemon/Bulbasaur.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pokemon/Caterpie.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pokemon/Caterpie.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pokemon/Charmander.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pokemon/Charmander.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pokemon/Pidgey.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pokemon/Pidgey.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pokemon/Pikachu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pokemon/Pikachu.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pokemon/Pokemon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pokemon/Pokemon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pokemon/Squrtle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pokemon/Squrtle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pokemon/Zubat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pokemon/Zubat.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/Pokemon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/Pokemon.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +70,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/include/xmemory" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/include/xstring" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/include/Character/Player.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/include/Character/Player.hpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Character/Player.cpp" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -45,28 +82,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "C++ Project.Pokemon.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Feature__9__Polymorphism",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CppIncludesOrderConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;C++ Project.Pokemon.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Feature__9__Polymorphism&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CppIncludesOrderConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Casey\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Casey\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Casey\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Casey\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Casey\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Casey\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RiderProblemsViewState">
     <hideBySeverity>
       <option value="15" />
@@ -120,7 +157,8 @@
       <workItem from="1748422200745" duration="16899000" />
       <workItem from="1748597402095" duration="7195000" />
       <workItem from="1749558329839" duration="12769000" />
-      <workItem from="1749727760051" duration="4853000" />
+      <workItem from="1749727760051" duration="11483000" />
+      <workItem from="1750092067769" duration="8737000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />

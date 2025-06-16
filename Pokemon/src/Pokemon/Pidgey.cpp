@@ -13,4 +13,11 @@ void Pidgey::wingAttack(Pokemon& Target)
     
 };
 
+void Pidgey::attack(Pokemon* target)
+{
+    wingAttack(*target);
+    
+}
+
+
     

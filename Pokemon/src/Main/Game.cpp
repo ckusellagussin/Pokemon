@@ -23,24 +23,25 @@ Game::Game()
 }
 
 
-void Game::gameLoop(Player player)
+void Game::gameLoop(Player* player)
 {
     bool keepPlaying {true};
     int choice;
     BattleManager* battleManager = new BattleManager();
+    WildEncounterManager* encounterManager = new WildEncounterManager();
 
     while(keepPlaying)
     {
         utility::clearConsole();
             
-        MSG<<"What will you do next? "<< player.Name << "!" << END;
+        MSG<<"What will you do next? "<< player->name << "!" << END;
         MSG<<"1. Go into tall grass to battle wild Pokemon "<< "!" << END;
         MSG<<"2. Visit the PokeCentre "<< END;
         MSG<<"3. Challenge Gyms "<< END;
         MSG<<"4. Enter Pokemon League"<<"!"<<END;
         MSG<<"5. Quit"<<"!"<<END;
-        MSG<<"Enter the number corresponding to the choice "<< player.Name << "!" << END;
-        MSG << "Name: " << player.chosenPokemon.getName() << " Health: " << player.chosenPokemon.getHealth() << " Attack Power: " << player.chosenPokemon.getAttackPower() << END;
+        MSG<<"Enter the number corresponding to the choice "<< player->name << "!" << END;
+        MSG << "Name: " << player->chosenPokemon->getName()<< " Health: " << player->chosenPokemon->getHealth() << " Attack Power: " << player->chosenPokemon->getAttackPower() << END;
 
         std::cout.flush();
         INPUT >> choice;
@@ -52,10 +53,9 @@ void Game::gameLoop(Player player)
 
         case 1:
             {
-                WildEncounterManager encounterManager;
-                Pokemon encounteredPokemon = encounterManager.getRandomPokemonFromGrass(forestGrass);
-                std::cout << "A wild " << encounteredPokemon.getName() << " appeared!" << END;
-                battleManager->StartBattle(player,encounteredPokemon);
+                encounteredPokemon = encounterManager->getRandomPokemonFromGrass(forestGrass);
+                std::cout << "A wild " << encounteredPokemon->getName() << " appeared!" << END;
+                battleManager->StartBattle(player, encounteredPokemon);
                 utility::WaitForEnter();
                 break;
             }
@@ -63,8 +63,8 @@ void Game::gameLoop(Player player)
             {
                 MSG << "You head to the PokeCenter" << END;
                 std::cout.flush();
-                player.chosenPokemon.heal();
-                MSG << "Your " << player.chosenPokemon.getName() <<" health is now " << player.chosenPokemon.getHealth() << "/" << player.chosenPokemon.getMaxHealth() << END;
+                player->chosenPokemon->heal();
+                MSG << "Your " << player->chosenPokemon->getName() <<" health is now " << player->chosenPokemon->getHealth() << "/" << player->chosenPokemon->getMaxHealth() << END;
                 utility::WaitForEnter();
                 break;
             }
@@ -94,3 +94,10 @@ void Game::gameLoop(Player player)
 
     }
 };
+
+Game::~Game()
+{
+
+    delete(encounteredPokemon);
+    
+}

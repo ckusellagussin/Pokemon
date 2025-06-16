@@ -5,39 +5,39 @@
 
 using namespace N_Utility;
 
-void BattleManager::StartBattle(Player& player, Pokemon& wildPokemon)
+void BattleManager::StartBattle(Player* player, Pokemon* wildPokemon)
 {
 
-    battleState->playerPokemon = &player.chosenPokemon;
-    battleState->wildPokemon = &wildPokemon;
-    battleState->playerTurn = true;
-    battleState->battleOutgoing = true;
+    battleState.playerPokemon = player->chosenPokemon;
+    battleState.wildPokemon = wildPokemon;
+    battleState.playerTurn = true;
+    battleState.battleOutgoing = true;
 
-    battle(player);
+    battle();
     
 }
 
-void BattleManager::battle(Player player)
+void BattleManager::battle()
 {
 
-   while(battleState->battleOutgoing)
+   while(battleState.battleOutgoing)
    {
 
-        if(battleState->playerTurn)
+        if(battleState.playerTurn)
         {
 
-            battleState->playerPokemon->attack(*battleState->wildPokemon);
+            battleState.playerPokemon->attack(battleState.wildPokemon);
             
         }
         else
         {
 
-            battleState->wildPokemon->attack((*battleState->playerPokemon));
+            battleState.wildPokemon->attack((battleState.playerPokemon));
             
         }
        updateBattleState();
 
-       battleState->playerTurn = !battleState->playerTurn;
+       battleState.playerTurn = !battleState.playerTurn;
 
        utility::WaitForEnter();
 
@@ -52,16 +52,16 @@ void BattleManager::battle(Player player)
 void BattleManager::updateBattleState()
 {
 
-    if(battleState->playerPokemon->isFainted())
+    if(battleState.playerPokemon->isFainted())
     {
 
-        battleState->battleOutgoing = false;
+        battleState.battleOutgoing = false;
         
     }
-    else if (battleState->wildPokemon -> isFainted())
+    else if (battleState.wildPokemon -> isFainted())
     {
 
-        battleState->battleOutgoing = false;
+        battleState.battleOutgoing = false;
         
     }
 
@@ -71,20 +71,19 @@ void BattleManager::updateBattleState()
 
 void BattleManager::HandleBattleOutcome()
 {
-    if (battleState->playerPokemon->isFainted())
+    if (battleState.playerPokemon->isFainted())
     {
 
-        MSG << "Ah your " << battleState->playerPokemon->getName() <<" has fainted" << END;
+        MSG << "Ah your " << battleState.playerPokemon->getName() <<" has fainted" << END;
         
     }
-    else if (battleState->wildPokemon->isFainted())
+    else if (battleState.wildPokemon->isFainted())
     {
 
-        MSG << "Ah your " << battleState->playerPokemon->getName() <<" has come out victorious!" << END;
+        MSG << "Ah your " << battleState.playerPokemon->getName() <<" has come out victorious!" << END;
         
     }
     
-    delete battleState;
 }
 
 

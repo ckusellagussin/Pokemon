@@ -19,7 +19,7 @@
         Professor->explainMainQuest(*player);
 
         Game* game = new Game();
-        game->gameLoop(*player);
+        game->gameLoop(player);
 
         delete Professor;
         delete player;
