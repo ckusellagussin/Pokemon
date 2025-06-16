@@ -16,5 +16,7 @@ void Zubat::superSonic(Pokemon& Target)
 void Zubat::attack(Pokemon* target)
 {
     superSonic(*target);
+    MSG << Name << " Attacks " << target->getName() << " for " << attackPower << " damage!" << END;
+    MSG << target->getName()<< " has " << target->getHealth() << "from " << target->getMaxHealth() << END;
     
 }

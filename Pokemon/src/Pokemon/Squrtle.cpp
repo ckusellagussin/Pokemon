@@ -16,6 +16,8 @@ void Squrtle::waterSplash(Pokemon& Target)
 void Squrtle::attack(Pokemon* target)
 {
     waterSplash(*target);
+    MSG << Name << " Attacks " << target->getName() << " for " << attackPower << " damage!" << END;
+    MSG << target->getName()<< " has " << target->getHealth() << "from " << target->getMaxHealth() << END;
     
 }
 

@@ -16,6 +16,8 @@ void Pidgey::wingAttack(Pokemon& Target)
 void Pidgey::attack(Pokemon* target)
 {
     wingAttack(*target);
+    MSG << Name << " Attacks " << target->getName() << " for " << attackPower << " damage!" << END;
+    MSG << target->getName()<< " has " << target->getHealth() << "from " << target->getMaxHealth() << END;
     
 }
 

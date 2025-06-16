@@ -16,6 +16,8 @@ void Charmander::flameBurst(Pokemon& Target)
 void Charmander::attack(Pokemon* target)
 {
     flameBurst(*target);
+    MSG << Name << " Attacks " << target->getName() << " for " << attackPower << " damage!" << END;
+    MSG << target->getName()<< " has " << target->getHealth() << "from " << target->getMaxHealth() << END;
     
 }
 

@@ -16,6 +16,8 @@ void Pikachu::thunderShock(Pokemon& Target)
 void Pikachu::attack(Pokemon* target)
 {
     thunderShock(*target);
+    MSG << Name << " Attacks " << target->getName() << " for " << attackPower << " damage!" << END;
+    MSG << target->getName()<< " has " << target->getHealth() << "from " << target->getMaxHealth() << END;
     
 }
 
