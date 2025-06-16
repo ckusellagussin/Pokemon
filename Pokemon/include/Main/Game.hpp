@@ -10,10 +10,11 @@ class Game
 {
 public:
     Game();
-    void gameLoop(Player player);   
-
+    ~Game();
+    void gameLoop(Player* player);   
 private:
     Grass forestGrass;
+    Pokemon* encounteredPokemon;
 };
 
 

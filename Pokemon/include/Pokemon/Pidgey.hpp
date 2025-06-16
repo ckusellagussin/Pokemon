@@ -11,8 +11,7 @@ public:
     Pidgey();
 private:
     void wingAttack(Pokemon& Target);
-
-    
+    void attack(Pokemon* target) override;
 };
 
 

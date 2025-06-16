@@ -13,3 +13,9 @@ void Charmander::flameBurst(Pokemon& Target)
     
 }
 
+void Charmander::attack(Pokemon* target)
+{
+    flameBurst(*target);
+    
+}
+

@@ -11,6 +11,7 @@ public:
     Pikachu();
 private:
     void thunderShock(Pokemon& Target);
+    void attack(Pokemon* target) override;
 
     
 };

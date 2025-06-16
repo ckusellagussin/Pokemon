@@ -9,11 +9,11 @@
 class BattleManager
 {
     public:
-        void StartBattle(Player& player, Pokemon& wildPokemon);
+        void StartBattle(Player* player, Pokemon* wildPokemon);
     
     private:
-        BattleState* battleState = new BattleState();
-        void battle(Player player);
+        BattleState battleState;
+        void battle();
         void HandleBattleOutcome();
         void updateBattleState();
     

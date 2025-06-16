@@ -27,7 +27,7 @@ void ProfessorOak::greetPlayer(Player& player)
 void ProfessorOak::explainMainQuest(Player& player)
 {
     
-    MSG << "Professor Oak: Oak-ay "<< player.Name<< "! I am about to explain to you about your upcoming grand adventure." << END;
+    MSG << "Professor Oak: Oak-ay "<< player.name<< "! I am about to explain to you about your upcoming grand adventure." << END;
     utility::WaitForEnter();
     MSG << "Professor Oak: You see, becoming a Pokemon Master is no easy feat. It takes courage, wisdom, and a bit of luck" << END;
     std::cin.get();
@@ -50,9 +50,9 @@ void ProfessorOak::offerPokemonChoice(Player& player)
 {
     std::string playerName;
     MSG << "But first off, I want to ask you the question of who will be the greatest trainer in the region! What is your name?: " << END;
-    std::getline (std::cin, player.Name);
+    std::getline (std::cin, player.name);
     utility::clearConsole();
-    MSG << "Great name! Nice to meet you "<< player.Name << "! I see special things just from looking into your eyes." << END;
+    MSG << "Great name! Nice to meet you "<< player.name << "! I see special things just from looking into your eyes." << END;
     std::cin.get();
     MSG << "Which pokemon do you choose?: Please pick 1 for Charmander, 2 for Squirtle or 3 for Bulbasaur " << END;
     int tempChoice;

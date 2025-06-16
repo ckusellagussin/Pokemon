@@ -773,6 +773,7 @@
     <ClInclude Include="include\Battle\BattleManager.hpp" />
     <ClInclude Include="include\Battle\BattleState.hpp" />
     <ClInclude Include="include\Battle\WildEncounterManager.hpp" />
+    <ClInclude Include="include\Character\Player.hpp" />
     <ClInclude Include="include\Character\ProfessorOak.hpp" />
     <ClInclude Include="include\Main\Game.hpp" />
     <ClInclude Include="include\Pokemon\Bulbasaur.hpp" />

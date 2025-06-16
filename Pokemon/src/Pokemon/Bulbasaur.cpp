@@ -12,3 +12,10 @@ void Bulbasaur::vineWhip(Pokemon& Target)
     Target.TakeDamage(20);
     
 }
+
+void Bulbasaur::attack(Pokemon* target)
+{
+    vineWhip(*target);
+    
+}
+

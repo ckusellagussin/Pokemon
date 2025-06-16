@@ -12,3 +12,9 @@ void Zubat::superSonic(Pokemon& Target)
     Target.TakeDamage(20);
     
 }
+
+void Zubat::attack(Pokemon* target)
+{
+    superSonic(*target);
+    
+}

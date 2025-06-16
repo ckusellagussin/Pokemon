@@ -11,7 +11,7 @@ public:
     Caterpie();
 private:
     void bugBite(Pokemon& Target);
-
+    void attack(Pokemon* target) override;
     
 };
 
