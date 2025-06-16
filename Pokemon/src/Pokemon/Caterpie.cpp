@@ -18,4 +18,6 @@ void Caterpie::bugBite(Pokemon& Target)
 void Caterpie::attack(Pokemon* target)
 {
     bugBite(*target);
+    MSG << Name << " Attacks " << target->getName() << " for " << attackPower << " damage!" << END;
+    MSG << target->getName()<< " has " << target->getHealth() << "from " << target->getMaxHealth() << END;
 }
