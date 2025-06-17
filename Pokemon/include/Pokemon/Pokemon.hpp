@@ -4,8 +4,11 @@
 
 #include <string>
 #include <iostream>
+#include <vector>
+#include "../../include/Battle/Move.hpp"
 
 enum class PokemonType;
+struct Move;
 
 class Pokemon
 {
@@ -18,11 +21,16 @@ public:
     Pokemon(const Pokemon &other);
 
     ~Pokemon();
-
-    virtual void attack(Pokemon* target);
+    std::vector<Move> moves;
+    virtual void attack(Move selectedMove, Pokemon* target);
     void TakeDamage(int damage);
     bool isFainted() const;
     void heal();
+    void selectAndUseMove(Pokemon* target);
+    void printAvailableMoves();
+    int selectMove();
+    void useMove(Move selectedMove, Pokemon* target);
+    void reduceAttackPower(int reducedDamage);
     
     std::string getName() {return Name;}
     int getAttackPower() {return attackPower;}
@@ -39,5 +47,6 @@ protected:
     int attackPower;
     
 };
+
 
 #endif

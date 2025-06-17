@@ -3,21 +3,27 @@
 #include "../../include/Utility/Utility.hpp"
 
 Charmander::Charmander() : Pokemon("Charmander", PokemonType::Fire, 100, 35)
-{}
-
-void Charmander::flameBurst(Pokemon& Target)
 {
-    
-    MSG << Name << " uses Flame Burst on " << Target.getName() << END;
-    Target.TakeDamage(20);
-    
+
+    Move("Ember", 25);
+    Move("Tackle", 10);
+    Move("Blazing Charge", 70);
 }
 
-void Charmander::attack(Pokemon* target)
+
+
+void Charmander::attack(Move selectedMove, Pokemon* target)
 {
-    flameBurst(*target);
-    MSG << Name << " Attacks " << target->getName() << " for " << attackPower << " damage!" << END;
-    MSG << target->getName()<< " has " << target->getHealth() << "from " << target->getMaxHealth() << END;
+   
+    selectAndUseMove(target);
+
+    if(selectedMove.name == "Blazing Charge")
+    {
+        int recoilDamage = 10;
+        this->TakeDamage(recoilDamage);
+        N_Utility::utility::WaitForEnter();
+    }
+
     
 }
 

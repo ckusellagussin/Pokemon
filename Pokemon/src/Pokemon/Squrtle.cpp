@@ -3,21 +3,32 @@
 #include "../../include/Utility/Utility.hpp"
 
 Squrtle::Squrtle() : Pokemon("Squrtle", PokemonType::Water, 100, 35)
-{}
-
-void Squrtle::waterSplash(Pokemon& Target)
 {
 
-    MSG << Name << " uses Water Splash on " << Target.getName() << END;
-    Target.TakeDamage(20);
+    Move("Water Gun", 25);
+    Move("Tackle", 10);
+    Move("Rapid Spin", 10);
     
 }
 
-void Squrtle::attack(Pokemon* target)
+
+void Squrtle::attack(Move selectedMove, Pokemon* target)
 {
-    waterSplash(*target);
-    MSG << Name << " Attacks " << target->getName() << " for " << attackPower << " damage!" << END;
-    MSG << target->getName()<< " has " << target->getHealth() << "from " << target->getMaxHealth() << END;
+    selectAndUseMove(target);
+
+    if(selectedMove.name == "Rapid Spin")
+    {
+        int hits = (rand() % 4 +2);
+
+        for (int i=0; i<hits;++i)
+        {
+
+            Pokemon::attack(selectedMove,target);
+
+        }
+
+        MSG << "Rapid spin hits " << hits << " times" << END;
+    }
     
 }
 

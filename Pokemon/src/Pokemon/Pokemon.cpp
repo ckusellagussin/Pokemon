@@ -1,11 +1,12 @@
 #include "../../include/Pokemon/Pokemon.hpp"
+#include "../../include/Battle/Move.hpp"
 #include "../../include/Pokemon/PokemonType.hpp"
 #include "../../include/Utility/Utility.hpp"
 
 using namespace N_Utility;
 
 
-std::string Name;
+    std::string Name;
     PokemonType Type;
 
     Pokemon::Pokemon()
@@ -53,15 +54,97 @@ std::string Name;
     }
 
 
-    void Pokemon::attack(Pokemon* target)
+    void Pokemon::attack(Move selectedMove, Pokemon* target)
     {
 
-        int damage = attackPower;
-        MSG << Name << " Attacks " << target->Name << " for " << damage << " damage!" << END;
-        MSG << target->Name<< " has " << target->Health << "from " << target->maxHealth << END;
-        target->TakeDamage(damage);
+        target->TakeDamage(selectedMove.power);
         
     }
+
+    void Pokemon::printAvailableMoves()
+    {
+
+       MSG << Name << "'s moves are:" << END;
+
+        for(size_t i = 0; i < moves.size(); ++i)
+        {
+
+            MSG<<i+1<<":" << moves[i].name << "(power: " << moves [i].power << ")" <<END;
+            
+        }
+        
+    }
+
+    void Pokemon::reduceAttackPower(int reducedDamage)
+    {
+
+        for(int i=0; i<moves.size(); i++)
+        {
+
+            moves[i].power -= reducedDamage;
+            if(moves[i].power < 0)
+                moves[i].power = 0;
+        }
+
+        
+    }
+
+
+    int Pokemon::selectMove()
+    {
+
+        int choice;
+        MSG << "Select a move: " << END;
+        INPUT >> choice;
+
+        while (choice < 1 || choice > static_cast<int>(moves.size()))
+        {
+
+            MSG << "Invalid choice, try again" << END;
+            
+        }
+
+        return choice;
+    }
+
+
+    void Pokemon::useMove(struct Move selectedMove, Pokemon* target)
+    {
+
+        MSG << Name << " used " << selectedMove.name << END;
+        
+        attack(selectedMove, target);
+
+        utility::WaitForEnter();
+        MSG << ".." << END;
+
+        if (target->isFainted())
+        {
+
+            MSG<< target->Name << " fainted!" << END;
+            
+        }
+        else
+        {
+
+            MSG << target->Name << " has " << target->Health << " HP left" << END;
+            
+        }
+        
+    }
+
+
+    void Pokemon::selectAndUseMove(Pokemon* target)
+    {
+        
+        printAvailableMoves();
+
+        int choice = selectMove();
+        Move selectedMove = moves[choice-1];
+
+        useMove(selectedMove, target);
+    }
+
 
 
     void Pokemon::heal()
@@ -73,5 +156,7 @@ std::string Name;
 
     Pokemon::~Pokemon()
     {
-     
+
+
+        
     }
