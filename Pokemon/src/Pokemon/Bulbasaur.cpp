@@ -3,20 +3,39 @@
 #include "../../include/Utility/Utility.hpp"
 
 Bulbasaur::Bulbasaur() : Pokemon("Bulbasaur", PokemonType::Grass, 100, 35)
-{}
-
-void Bulbasaur::vineWhip(Pokemon& Target)
 {
 
-    MSG << Name << " uses Vine Whip on " << Target.getName() << END;
-    Target.TakeDamage(20);
+    Move("Vine Whip", 25);
+    Move("Tackle", 10);
     
 }
 
-void Bulbasaur::attack(Pokemon* target)
+
+
+void Bulbasaur::attack(Move selectedMove, Pokemon* target)
 {
-    vineWhip(*target);
-    MSG << Name << " Attacks " << target->getName() << " for " << attackPower << " damage!" << END;
-    MSG << target->getName()<< " has " << target->getHealth() << "from " << target->getMaxHealth() << END;
+    selectAndUseMove(target);
+
+    if(selectedMove.name == "Vine Whip")
+    {
+
+        int secondChanceHit = rand() % 2;
+
+        if (secondChanceHit == 1)
+        {
+            Pokemon::attack(selectedMove, target);
+            std::cout << Name << " hits again with a second " << selectedMove.name << END;
+        }
+        else
+        {
+
+         MSG << target->getName() << " dodged the second hit" << END;   
+            
+        }
+        
+    }
+
+    
+
 }
 

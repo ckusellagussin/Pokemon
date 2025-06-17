@@ -10,10 +10,7 @@ class Charmander : public Pokemon
 public:
     Charmander();
 private:
-    void flameBurst(Pokemon& Target);
-    void attack(Pokemon* target) override;
-   
-
+    void attack(Move selectedMove, Pokemon* target) override;
     
 };
 

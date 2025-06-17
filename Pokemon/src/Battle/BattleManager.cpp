@@ -4,6 +4,7 @@
 #include "../../include/Pokemon/Pokemon.hpp"
 
 using namespace N_Utility;
+BattleState BattleManager::battleState;
 
 void BattleManager::StartBattle(Player* player, Pokemon* wildPokemon)
 {
@@ -11,7 +12,7 @@ void BattleManager::StartBattle(Player* player, Pokemon* wildPokemon)
     battleState.playerPokemon = player->chosenPokemon;
     battleState.wildPokemon = wildPokemon;
     battleState.playerTurn = true;
-    battleState.battleOutgoing = true;
+    battleState.battleOngoing = true;
 
     battle();
     
@@ -20,19 +21,19 @@ void BattleManager::StartBattle(Player* player, Pokemon* wildPokemon)
 void BattleManager::battle()
 {
 
-   while(battleState.battleOutgoing)
+   while(battleState.battleOngoing)
    {
 
         if(battleState.playerTurn)
         {
 
-            battleState.playerPokemon->attack(battleState.wildPokemon);
+            battleState.playerPokemon->selectAndUseMove(battleState.wildPokemon);
             
         }
         else
         {
 
-            battleState.wildPokemon->attack((battleState.playerPokemon));
+            battleState.wildPokemon->selectAndUseMove(battleState.playerPokemon);
             
         }
        updateBattleState();
@@ -49,19 +50,20 @@ void BattleManager::battle()
 }
 
 
+
 void BattleManager::updateBattleState()
 {
 
     if(battleState.playerPokemon->isFainted())
     {
 
-        battleState.battleOutgoing = false;
+        battleState.battleOngoing = false;
         
     }
     else if (battleState.wildPokemon -> isFainted())
     {
 
-        battleState.battleOutgoing = false;
+        battleState.battleOngoing = false;
         
     }
 
@@ -85,6 +87,16 @@ void BattleManager::HandleBattleOutcome()
     }
     
 }
+
+void BattleManager::stopBattle()
+{
+
+    battleState.battleOngoing = false;
+    
+}
+
+
+
 
 
 

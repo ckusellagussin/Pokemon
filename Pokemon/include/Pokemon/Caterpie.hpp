@@ -10,8 +10,7 @@ class Caterpie : public Pokemon
 public:
     Caterpie();
 private:
-    void bugBite(Pokemon& Target);
-    void attack(Pokemon* target) override;
+    void attack(Move selectedMove, Pokemon* target) override;
     
 };
 

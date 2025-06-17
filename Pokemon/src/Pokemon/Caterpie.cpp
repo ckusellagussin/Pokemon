@@ -3,21 +3,24 @@
 #include "../../include/Utility/Utility.hpp"
 
 Caterpie::Caterpie() : Pokemon("Caterpie", PokemonType::Bug, 100, 10)
-{}
-
-
-
-void Caterpie::bugBite(Pokemon& Target)
 {
-
-    MSG << Name << " uses Bug Bite on " << Target.getName() << END;
-    Target.TakeDamage(20);
+    Move("String Shot", 15);
+    Move("Sticky Web", 20);
+    Move("Tackle", 10);
     
 }
 
-void Caterpie::attack(Pokemon* target)
+
+void Caterpie::attack(Move selectedMove, Pokemon* target)
 {
-    bugBite(*target);
-    MSG << Name << " Attacks " << target->getName() << " for " << attackPower << " damage!" << END;
-    MSG << target->getName()<< " has " << target->getHealth() << "from " << target->getMaxHealth() << END;
+    selectAndUseMove(target);
+
+    if(selectedMove.name == "String Shot")
+    {
+
+        int reducedDamage {10};
+        target->reduceAttackPower(reducedDamage);
+        MSG << target->getName() <<"'s attack power has been reduced by: " << reducedDamage << "damage!" << END;
+        
+    }
 }
