@@ -25,7 +25,7 @@ Player::Player()
                 MSG << "You have chosen Charmander!" << END;
                 chosenPokemon = new Charmander();
                 MSG << "Congratulations on picking your first Pokemon, Charmander! I'm sure you will become the best "
-                       "of friends! "<< std::cin.get() <<
+                       "of friends! "<< END  <<
                        "It's time for you to step into the exciting world of Pokemon! "
                        "Enjoy!" <<END;
                 break;
@@ -33,7 +33,7 @@ Player::Player()
                 MSG << "You have chosen Squirtle!" << END;
                 chosenPokemon = new Squrtle();
                 MSG << "Congratulations on picking your first Pokemon, Squirtle! I'm sure you will become the best of "
-                       "friends! " << std::cin.get() <<
+                       "friends! " << END  <<
                        "It's time for you to step into the exciting world of Pokemon! "
                        "Enjoy!"<<END;
                 break;
@@ -42,7 +42,7 @@ Player::Player()
                 chosenPokemon = new Bulbasaur();
                 MSG << "Congratulations on picking your first Pokemon, Bulbasaur! I'm sure you will become the best of "
                        "friends! "
-               << std::cin.get() <<
+               << END <<
                        "It's time for you to step into the exciting world of Pokemon! "
                        "Enjoy!" <<END;
                 break;

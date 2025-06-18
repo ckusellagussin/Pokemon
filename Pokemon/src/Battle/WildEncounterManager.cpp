@@ -16,7 +16,7 @@ Pokemon* WildEncounterManager::getRandomPokemonFromGrass(Grass& grass)
 
     int randomIndex = rand() % grass.pokemonList.size();
 
-    Pokemon* encounteredPokemon = &grass.pokemonList[randomIndex];
+    Pokemon* encounteredPokemon = grass.pokemonList[randomIndex];
     return encounteredPokemon;
     
 }

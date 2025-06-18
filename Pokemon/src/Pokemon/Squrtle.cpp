@@ -2,19 +2,19 @@
 #include "../../include/Pokemon/PokemonType.hpp"
 #include "../../include/Utility/Utility.hpp"
 
-Squrtle::Squrtle() : Pokemon("Squrtle", PokemonType::Water, 100, 35)
+Squrtle::Squrtle() : Pokemon("Squrtle", PokemonType::Water, 100, 
 {
 
-    Move("Water Gun", 25);
-    Move("Tackle", 10);
-    Move("Rapid Spin", 10);
+    Move("Water Gun", 25) ,
+    Move("Tackle", 10),
+    Move("Rapid Spin", 10),
     
-}
+}) {}
 
 
 void Squrtle::attack(Move selectedMove, Pokemon* target)
 {
-    selectAndUseMove(target);
+    Pokemon::attack(selectedMove, target);
 
     if(selectedMove.name == "Rapid Spin")
     {

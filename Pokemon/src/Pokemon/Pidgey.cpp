@@ -3,20 +3,21 @@
 #include "../../include/Pokemon/PokemonType.hpp"
 #include "../../include/Utility/Utility.hpp"
 
-Pidgey::Pidgey():Pokemon("Pidgey", PokemonType::Normal, 100, 35)
+Pidgey::Pidgey():Pokemon("Pidgey", PokemonType::Normal, 100,
 {
     
-    Move("Wing Attack", 20);
-    Move("Tackle", 10);
-    Move("Gust", 15);
+    Move("Wing Attack", 20),
+    Move("Tackle", 10),
+    Move("Gust", 15),
     
-}
+})
+{}
 
 
 
 void Pidgey::attack(Move selectedMove, Pokemon* target)
 {
-    selectAndUseMove(target);
+    Pokemon::attack(Move("Gust", 15), target);
 
     if(selectedMove.name == "Gust")
     {
