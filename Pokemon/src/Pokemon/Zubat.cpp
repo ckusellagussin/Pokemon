@@ -14,7 +14,7 @@ Zubat::Zubat() : Pokemon("Zubat", PokemonType::Poison, 100,
 
 void Zubat::attack(Move selectedMove, Pokemon* target)
 {
-    Pokemon::attack(Move("Super Sonic", 20), target);
+    Pokemon::attack(selectedMove, target);
 
     if(selectedMove.name == "Leech Life")
     {
@@ -24,7 +24,7 @@ void Zubat::attack(Move selectedMove, Pokemon* target)
         if (this->Health > this -> maxHealth)
         {
 
-            this -> Health = this->maxHealth;
+            this -> Health = this -> maxHealth;
             
         }
         

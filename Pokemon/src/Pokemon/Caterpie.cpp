@@ -14,7 +14,7 @@ Caterpie::Caterpie() : Pokemon("Caterpie", PokemonType::Bug, 100,
 
 void Caterpie::attack(Move selectedMove, Pokemon* target)
 {
-    Pokemon::attack(Move("String Shot", 15), target);
+    Pokemon::attack(selectedMove, target);
 
     if(selectedMove.name == "String Shot")
     {

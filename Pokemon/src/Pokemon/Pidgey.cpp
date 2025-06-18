@@ -17,7 +17,7 @@ Pidgey::Pidgey():Pokemon("Pidgey", PokemonType::Normal, 100,
 
 void Pidgey::attack(Move selectedMove, Pokemon* target)
 {
-    Pokemon::attack(Move("Gust", 15), target);
+    Pokemon::attack(selectedMove, target);
 
     if(selectedMove.name == "Gust")
     {
