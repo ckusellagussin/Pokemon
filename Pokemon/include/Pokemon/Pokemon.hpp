@@ -16,9 +16,9 @@ public:
     
     Pokemon();
 
-    Pokemon(std::string p_name, PokemonType p_type, int p_maxHealth, int attackPower);
+    Pokemon(std::string p_name, PokemonType p_type, int p_maxHealth, std::vector<Move>);
     
-    Pokemon(const Pokemon &other);
+    Pokemon(const Pokemon* &other);
 
     ~Pokemon();
     std::vector<Move> moves;

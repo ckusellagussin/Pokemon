@@ -15,21 +15,21 @@ using namespace N_Utility;
         Type = PokemonType::Electric;
         Health = 10;
         maxHealth = 40;
-        attackPower = 10;
+
     }
 
-    Pokemon::Pokemon(std::string p_name, PokemonType p_type, int p_maxHealth, int p_attackPower)
-     : Name(p_name), Type(p_type), Health(p_maxHealth), maxHealth(p_maxHealth), attackPower(p_attackPower) {}
+    Pokemon::Pokemon(std::string p_name, PokemonType p_type, int p_maxHealth, std::vector<Move> p_moves)
+     : Name(p_name), Type(p_type), Health(p_maxHealth), maxHealth(p_maxHealth), moves(p_moves) {}
 
     
-    Pokemon::Pokemon(const Pokemon &other)
+    Pokemon::Pokemon(const Pokemon* &other)
     {
 
-        Name = other.Name;
-        Type = other.Type;
-        Health = other.Health;
-        maxHealth = other.maxHealth;
-        attackPower = other.attackPower;
+        Name = other->Name;
+        Type = other->Type;
+        Health = other->Health;
+        maxHealth = other->maxHealth;
+        moves = other->moves;
 
     }
 

@@ -10,9 +10,9 @@
 struct Grass
 {
 
-    std::vector<Pokemon> pokemonList;
-    int encounterRate;
     std::string Environment;
+    std::vector<Pokemon*> pokemonList;
+    int encounterRate;
     
 };
 

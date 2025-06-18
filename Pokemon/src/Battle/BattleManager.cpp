@@ -23,7 +23,7 @@ void BattleManager::battle()
 
    while(battleState.battleOngoing)
    {
-
+       MSG << "Battle is still ongoing" << END;
         if(battleState.playerTurn)
         {
 
@@ -54,7 +54,7 @@ void BattleManager::battle()
 void BattleManager::updateBattleState()
 {
 
-    if(battleState.playerPokemon->isFainted())
+    if(battleState.playerPokemon -> isFainted())
     {
 
         battleState.battleOngoing = false;

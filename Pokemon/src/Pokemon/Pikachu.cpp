@@ -2,18 +2,18 @@
 #include "../../include/Pokemon/PokemonType.hpp"
 #include "../../include/Utility/Utility.hpp"
 
-Pikachu::Pikachu():Pokemon("Pikachu", PokemonType::Electric, 100, 20)
+Pikachu::Pikachu():Pokemon("Pikachu", PokemonType::Electric, 100, 
 {
 
-    Move("Thundershock", 25);
-    Move("Thunderbolt", 80);
-    Move("Tackle", 10);
+    Move("Thundershock", 25),
+    Move("Thunderbolt", 80),
+    Move("Tackle", 10),
     
-}
-
+})
+{}
 void Pikachu::attack(Move selectedMove, Pokemon* target)
 {
-    selectAndUseMove(target);
+    Pokemon::attack(selectedMove, target);
 
     if(selectedMove.name == "Thunderbolt")
     {

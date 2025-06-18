@@ -4,24 +4,18 @@
 #include "../../include/Pokemon/PokemonType.hpp"
 #include "../../include/Battle/BattleManager.hpp"
 #include <iostream>
+#include "../../include/Pokemon/Caterpie.hpp"
+#include "../../include/Pokemon/Pidgey.hpp"
+#include "../../include/Pokemon/Zubat.hpp"
 
 using namespace N_Utility;
 
 
-Game::Game()
-    : forestGrass{  
-            {
-                {"Pidgey", PokemonType::Normal, 40, 10},
-                {"Caterpie", PokemonType::Bug, 35, 10},
-                {"Zubat", PokemonType::Poison, 30, 10},
-            },
-            80,
-            "Forest"
-        }
-{
-    
-}
+Game::Game() {
+    forestGrass = {"Forest", {new Pidgey(), new Caterpie(), new Zubat()}, 70} ;
 
+}
+      
 
 void Game::gameLoop(Player* player)
 {

@@ -2,20 +2,21 @@
 #include "../../include/Pokemon/PokemonType.hpp"
 #include "../../include/Utility/Utility.hpp"
 
-Charmander::Charmander() : Pokemon("Charmander", PokemonType::Fire, 100, 35)
+Charmander::Charmander() : Pokemon("Charmander", PokemonType::Fire, 100,
 {
 
-    Move("Ember", 25);
-    Move("Tackle", 10);
-    Move("Blazing Charge", 70);
-}
+    Move("Ember", 25),
+    Move("Tackle", 10),
+    Move("Blazing Charge", 70),
+})
+{}
 
 
 
 void Charmander::attack(Move selectedMove, Pokemon* target)
 {
    
-    selectAndUseMove(target);
+    Pokemon::attack(selectedMove, target);
 
     if(selectedMove.name == "Blazing Charge")
     {

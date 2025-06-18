@@ -2,19 +2,20 @@
 #include "../../include/Pokemon/PokemonType.hpp"
 #include "../../include/Utility/Utility.hpp"
 
-Bulbasaur::Bulbasaur() : Pokemon("Bulbasaur", PokemonType::Grass, 100, 35)
+Bulbasaur::Bulbasaur() : Pokemon("Bulbasaur", PokemonType::Grass, 100,
 {
 
-    Move("Vine Whip", 25);
-    Move("Tackle", 10);
+    Move("Vine Whip", 25),
+    Move("Tackle", 10),
     
-}
+})
+{}
 
 
 
 void Bulbasaur::attack(Move selectedMove, Pokemon* target)
 {
-    selectAndUseMove(target);
+    Pokemon::attack(selectedMove, target);
 
     if(selectedMove.name == "Vine Whip")
     {

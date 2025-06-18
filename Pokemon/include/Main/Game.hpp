@@ -3,6 +3,7 @@
 #pragma once
 
 #include "../../include/Pokemon/Grass.hpp"
+#include "../../include/Character/Player.hpp"
 
 class Player;
 
