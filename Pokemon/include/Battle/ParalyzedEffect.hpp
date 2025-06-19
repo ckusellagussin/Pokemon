@@ -3,8 +3,9 @@
 #pragma once
 #include "IStatusEffect.hpp"
 #include "../Utility/Utility.hpp"
+#include <iostream>
 
-class paralyzed_effect : public IStausEffect
+class ParalyzedEffect : public IStausEffect
 {
 private:
     int turnsLeft;

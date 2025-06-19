@@ -1,7 +1,11 @@
 #ifndef I_STATUS_EFFECT_HPP
 #define I_STATUS_EFFECT_HPP
 #pragma once
-#include "../Pokemon/Pokemon.hpp"
+
+#include <iostream>
+
+
+class Pokemon;
 
 class IStausEffect
 {

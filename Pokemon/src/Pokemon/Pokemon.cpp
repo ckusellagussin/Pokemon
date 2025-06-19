@@ -1,5 +1,6 @@
 #include "../../include/Pokemon/Pokemon.hpp"
 #include "../../include/Battle/Move.hpp"
+#include "../../include/Battle/ParalyzedEffect.hpp"
 #include "../../include/Pokemon/PokemonType.hpp"
 #include "../../include/Utility/Utility.hpp"
 
@@ -15,6 +16,7 @@ using namespace N_Utility;
         Type = PokemonType::Electric;
         Health = 10;
         maxHealth = 40;
+        appliedEffect = nullptr;
 
     }
 
@@ -85,7 +87,6 @@ using namespace N_Utility;
             if(moves[i].power < 0)
                 moves[i].power = 0;
         }
-
         
     }
 
@@ -145,14 +146,59 @@ using namespace N_Utility;
         useMove(selectedMove, target);
     }
 
-
-
     void Pokemon::heal()
     {
 
         Health = maxHealth;
         
     }
+
+    bool Pokemon::canApplyEffect()
+    {
+
+        return appliedEffect == nullptr;
+       
+    }
+
+
+
+    bool Pokemon::canAttack()
+    {
+
+        if(appliedEffect == nullptr)
+        {
+            return true;
+        }
+        else
+        {
+           return appliedEffect->turnEndEffect(this); 
+        }
+        
+    }
+
+    void Pokemon::applyEffect(StatusEffectType effectToApply)
+    {
+        switch (effectToApply)
+        {
+
+        case StatusEffectType::Paralyzed:
+            appliedEffect = new ParalyzedEffect();
+            appliedEffect->applyEffect(this);
+            break;
+        default:
+                appliedEffect = nullptr;
+            
+        }
+        
+    }
+
+    void Pokemon::clearEffect()
+    {
+
+        appliedEffect = nullptr;
+        
+    }
+
 
     Pokemon::~Pokemon()
     {

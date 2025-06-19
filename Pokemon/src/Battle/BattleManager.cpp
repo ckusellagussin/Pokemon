@@ -23,7 +23,7 @@ void BattleManager::battle()
 
    while(battleState.battleOngoing)
    {
-       MSG << "Battle is still ongoing" << END;
+
         if(battleState.playerTurn)
         {
 
@@ -87,6 +87,7 @@ void BattleManager::HandleBattleOutcome()
     }
     
 }
+
 
 void BattleManager::stopBattle()
 {
