@@ -304,6 +304,7 @@
       <LinkCompiled>true</LinkCompiled>
       <AdditionalIncludeDirectories>;C:\Users\Casey\Documents\Dependencies\vcpkg\installed\x64-windows\include</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="src\Battle\ParalyzedEffect.cpp" />
     <ClCompile Include="src\Battle\WildEncounterManager.cpp">
       <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -699,6 +700,7 @@
     <ClInclude Include="include\Battle\BattleState.hpp" />
     <ClInclude Include="include\Battle\IStatusEffect.hpp" />
     <ClInclude Include="include\Battle\Move.hpp" />
+    <ClInclude Include="include\Battle\ParalyzedEffect.hpp" />
     <ClInclude Include="include\Battle\WildEncounterManager.hpp" />
     <ClInclude Include="include\Character\Player.hpp" />
     <ClInclude Include="include\Character\ProfessorOak.hpp" />
