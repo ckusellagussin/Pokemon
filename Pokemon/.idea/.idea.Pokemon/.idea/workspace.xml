@@ -8,20 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76848a35-e7a8-4068-95a7-3f62e568fd20" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/include/Battle/IStatusEffect.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Battle/ParalyzedEffect.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Battle/ParalyzedEffect.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pokemon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pokemon/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/CL.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/Pokemon.tlog/link.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/vc143.idb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/x64/Debug/vc143.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pokemon/Caterpie.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pokemon/Caterpie.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pokemon/Pidgey.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pokemon/Pidgey.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pokemon/Zubat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pokemon/Zubat.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/Pokemon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/Pokemon.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Battle/IStatusEffect.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Battle/IStatusEffect.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Pokemon/Grass.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Pokemon/Grass.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +129,8 @@
       <workItem from="1750092067769" duration="15737000" />
       <workItem from="1750157444067" duration="18388000" />
       <workItem from="1750261478116" duration="6570000" />
-      <workItem from="1750273594187" duration="1678000" />
+      <workItem from="1750273594187" duration="1764000" />
+      <workItem from="1750320120724" duration="7300000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
