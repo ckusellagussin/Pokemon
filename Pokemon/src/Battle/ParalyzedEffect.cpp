@@ -1,7 +1,8 @@
 #include "../../include/Battle/ParalyzedEffect.hpp"
+#include "../../include/Pokemon/Pokemon.hpp"
 
 
-void paralyzed_effect::applyEffect(Pokemon* target)
+void ParalyzedEffect::applyEffect(Pokemon* target)
 {
 
     MSG << "Ah.." << target->getName() << "has been paralyzed!" << END;
@@ -10,14 +11,14 @@ void paralyzed_effect::applyEffect(Pokemon* target)
     
 }
 
-std::string paralyzed_effect::getEffectName()
+std::string ParalyzedEffect::getEffectName()
 {
 
     return "Paralyzed";
     
 }
 
-bool paralyzed_effect::turnEndEffect(Pokemon* target)
+bool ParalyzedEffect::turnEndEffect(Pokemon* target)
 {
 
     if (turnsLeft <= 0)
@@ -44,7 +45,7 @@ bool paralyzed_effect::turnEndEffect(Pokemon* target)
     return true;
 }
 
-void paralyzed_effect::clearEffect(Pokemon* target)
+void ParalyzedEffect::clearEffect(Pokemon* target)
 {
 
     MSG << target->getName() << " is no longer paralyzed!" << END;

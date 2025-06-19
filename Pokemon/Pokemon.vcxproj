@@ -701,6 +701,7 @@
     <ClInclude Include="include\Battle\IStatusEffect.hpp" />
     <ClInclude Include="include\Battle\Move.hpp" />
     <ClInclude Include="include\Battle\ParalyzedEffect.hpp" />
+    <ClInclude Include="include\Battle\StatusEffectType.hpp" />
     <ClInclude Include="include\Battle\WildEncounterManager.hpp" />
     <ClInclude Include="include\Character\Player.hpp" />
     <ClInclude Include="include\Character\ProfessorOak.hpp" />
